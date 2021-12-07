@@ -28,11 +28,18 @@ h1:hover {
 .bio {
   font-size: 1.5rem;
 }
+
+.badges {
+  text-align: center;
+  padding: 30px;
+  font-size: 24px;
+}
+
 p {
   font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 22px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -246,7 +253,7 @@ this section covers the styling of the columns and rows within the table
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
-  padding-top: 2%;
+  padding-top: 1.5%;
   height: 450px;
 }
 
@@ -267,7 +274,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
-  margin-top: 6px;
+  margin-top: 0px;
   margin-bottom: 16px;
   resize: vertical; /* This allows the user to resize the text boxes vertically */
   font-family: Rockwell Extra Bold;
