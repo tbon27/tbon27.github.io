@@ -253,8 +253,12 @@ this section covers the styling of the columns and rows within the table
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
-  padding-top: 1.5%;
+  padding-top: 1%;
   height: 450px;
+}
+
+.special_image {
+  margin-top: 30px;
 }
 
 .Row:after {
