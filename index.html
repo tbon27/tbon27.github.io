@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-   <!-- <meta name="viewport" content="width=device-width" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tony Bongiovanni</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
@@ -13,7 +12,24 @@
   <!-- END HEAD -->
 
   <!-- BODY -->
-  <body class="background">
+
+  <body>  
+    <!------------------------------------------------------ 
+    This inline script is necessary (as opposed to a 
+    script loaded from a separate file) to prevent flickering 
+    -------------------------------------------------------->
+    <script>
+    //add the fade-out class to the body as soon as the page loads
+    document.body.classList.add('fade-out');
+    console.log("fadeout added");
+    // remove the fade-out class from the body once the page is loaded
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.remove('fade-out');
+    });
+    console.log("fadeout removed");
+    </script>
+
+
     <!-- NAV BAR -->
     <div class="Navbar">
       <a class="active" href="#Home"
@@ -29,7 +45,7 @@
     <!-- BG VIDEO-->
     <div id="Home">
       <video autoplay muted loop id="Heading-Video">
-        <source src="images/video/video_header.mp4" type="video/mp4" />
+        <source src="images/video/video_header.mp4" type="video/mp4"/>
         <!--Display message if video fails-->
         Your browser does not support HTML5 video.
       </video>
@@ -41,23 +57,22 @@
       <h1 class="white-text">Tony Bongiovanni's Portfolio</h1>
       <strong>
         <p class="center">
-          <q>Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user's shoes.<br> We try to see what they're seeing, and then make it,<br> and support what we think they might think.
+          <q>Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
           </q>
           <br>
           -Shigeru Miyamoto
           <br>
-          <br>
-          <span class="bio">My name is Tony B. Welcome to my portfolio website.<br>On it, I will tell
-          you about my background and experience.
-          <br>
+          <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
+          </p>
+          <p class="center">
+          <span class="bio">My name is Tony B. Welcome to my portfolio website.<br>On it, I will tell you about my background and experience.
           <br>
           Thank you for stopping by and enjoy!</span>
-          
         </p>
       </strong>
     </div>
     <!-- END VIDEO OVERLAY TEXT -->
-
+    
     <!-- ABOUT SECTION-->
     <div class="Row" id="About">
       <!--Left Column-->
@@ -70,11 +85,12 @@
         <p>
           I am a full-stack software developer who loves to code! Outside of coding, I enjoy playing guitar and spending time with my family.
           <br>
-          <br>I am a graduate of
+          <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
+        </p>
+        <p>
+          I am a graduate of
           <a href="https://www.learncodinganywhere.com" target="_blank"
-            >The Tech Academy</a
-          >’s Software Developer Boot Camp, and trained and experienced in the
-          following web and programming languages: HTML, CSS, JavaScript, SQL,
+            >The Tech Academy</a>&apos;s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,
           C# and more.
           <br>
           <div class="badges">
@@ -93,20 +109,23 @@
         <!--Left column-->
         <div class="Column_1">
             <h1>GitHub</h1>
-            <p>
+            <p style="text-align: center;">
                 You can view my coding projects on my GitHub profile here:
                 <br>
                 <p class="center"><a href="https://github.com/tbon27" target="_blank">Tony Bongiovanni's Github</a></p>
-                <br>
-                <p>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+             
+                <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
+                <p style="text-align: center;">I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
             </p>
         </div>
         <!--Right column-->
         <div class="Column_2">
-            <a href="https://github.com/tbon27" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            <a href="https://github.com/tbon27" target="_blank">
+              <img src="images/GitHub.png" alt="GitHub Logo"></a>
         </div>
     </div>
     <!-- END GITHUB SECTION -->
+
     <!-- CONTACT SECTION-->
     <div class="Row" id="Contact">
         <!--Contact image, left column-->
@@ -115,22 +134,43 @@
         </div>
         <!--Contact form, right column-->
         <div class="Column_1 Column_tall">
-            <h1>Contact</h1>
+            <h1 class="contactHeader">Contact</h1>
             <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form action="https://formspree.io/f/mpzbzaer" method="POST">
+            <form name="contactForm" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidateForm()" method="POST">
                 <label>Name:</label>
-                    <input type="text" placeholder="Enter your name here">
+                    <input type="text" name="Name:" placeholder="Enter your name here">
                 <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Enter your email here">
+                    <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
+                  <label>Phone:</label>
+                    <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
                 <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Enter your message here">
-                    <input type="submit" value="SUBMIT">
+                    <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
+                  <input type="submit" value="SUBMIT">
             </form>
         </div>
     </div>
-    </div>
-
     <!-- END CONTACT SECTION-->
+
+    <!-- POP UP CONTACT -->
+    
+    <button class="open-button" onclick="openForm()">Open Contact Form</button>
+    <div class="form-popup" id="myForm">
+    <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
+      <label>Name:</label>
+          <input type="text" name="Name:" placeholder="Enter your name here">
+      <label>Email:</label>
+          <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
+        <label>Phone:</label>
+          <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
+      <label>Message:</label>
+          <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
+        <input class="btn" type="submit" value="SUBMIT">
+        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+    </form>
+  </div>
+
+    <!-- END POP UP CONTACT -->
+    
     <!--FOOTER SECTION-->
     <footer>
         <p>
@@ -138,7 +178,70 @@
             <br>
         </p>
     </footer>
-        <!-- END FOOTER SECTION-->
+    <!-- END FOOTER SECTION-->
+
+    <!---------------- 
+          MY JS 
+    ------------------->
+      <script>
+        function ValidateForm(){
+          let x = document.forms["contactForm"]["Name:"].value
+          let y = document.forms["contactForm"]["Email:"].value
+          let z = document.forms["contactForm"]["Phone:"].value
+          let a = document.forms["contactForm"]["Message:"].value
+          if(x==""){
+            alert("Name must be filled out");
+            return false;
+          }    
+          if(y==""){
+            alert("Email must be filled out");
+            return false;
+          }  
+          if(z==""){
+            alert("Phone must be filled out");
+            return false;
+          }  
+          if(a==""){
+            alert("Message must be filled out");
+            return false;
+          }
+        }
+        
+        //separate function for popup form validation
+        function ValidatePopUpForm(){
+          let l = document.forms["PopUpForm"]["Name:"].value
+          let m = document.forms["PopUpForm"]["Email:"].value
+          let n = document.forms["PopUpForm"]["Phone:"].value
+          let o = document.forms["PopUpForm"]["Message:"].value
+          if(l==""){
+            alert("Name must be filled out");
+            return false;
+          }    
+          if(m==""){
+            alert("Email must be filled out");
+            return false;
+          }  
+          if(n==""){
+            alert("Phone must be filled out");
+            return false;
+          }  
+          if(o==""){
+            alert("Message must be filled out");
+            return false;
+          }
+        }
+
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+      </script>
+    <!---------------- 
+        END MY JS 
+    ------------------->
 
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
