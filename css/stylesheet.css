@@ -10,10 +10,14 @@ body {
   margin: 0%;
   opacity: 1;
   transition: 3s opacity;
+  letter-spacing: 0.2vw; /*vw is a relative measurement, 1vw is equal to 1% of the viewport width */
+  font-size: 1.5vw;
+  overflow-x: hidden;
+  user-select: none; /*prevents the text on the webpage from being highlighted by user */
 }
 
 body.fade-out {
-  opacity: 0;
+  opacity: 0.1;
   transition: none;
 }
 
@@ -21,7 +25,7 @@ h1 {
   text-transform: uppercase;
   font-family: "Georgia", Optima, sans-serif;
   text-align: center;
-  margin-top: 1.5%;
+  margin-top: 2%;
   padding-bottom: 10px;
   color: #1a1a1a;
   transition: transform 1s;
@@ -30,70 +34,72 @@ h1 {
 h1:hover {
   filter: grayscale(5%);
   transform: scale(1.05);
+  filter: grayscale(5%);
 }
 
 .white-text {
-  padding-top: 5px;
+  padding-top: 10vh; /* adds padding equal to 10% of the viewport height- to top of the portfolio title text */
   color: #fff;
   font-size: 2.25vw;
 }
 
-.bio {
+/* .bio {
   font-size: 1.5rem;
-}
+} */
 
 .badges {
   text-align: center;
   padding: 30px;
-  font-size: 24px;
+  font-size: 1.75vw;
 }
 
 p {
   font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
-  letter-spacing: 1px;
-  font-size: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: transform 1s;
+  letter-spacing: 0.1vw;
+  font-size: 1.75vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 p:hover {
   transform: scale(1.01);
+  transition: transform 1s;
 }
 
 .center {
   text-align: center;
-  transition: transform 2s;
 }
 
 .center:hover {
-  transform: scale(1.05);
+  transition: transform 0.2s;
+  transform: scale(1.01);
 }
 
 a {
   color: blue;
+  cursor: pointer;
+  text-decoration: underline; /*ensures all links are underlined*/
 }
 
 q {
   font-style: italic;
-  font-size: 1.75rem;
 }
 
 img {
   filter: grayscale(15%);
   border-radius: 25%;
   max-width: 100%;
-  height: 340px;
+  max-height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 1s;
 }
 
 img:hover {
-  filter: grayscale(1%);
-  transform: scale(1.05);
+  filter: grayscale(2.5%);
+  /* transition: transform 1s; */
+  /* transform: scale(1.05); */
 }
 
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
@@ -105,8 +111,9 @@ img:hover {
 }
 
 footer {
-  padding: 2%;
-  background-color: white;
+  padding: 1%;
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 /**************
 END GENERAL STYLES
@@ -210,10 +217,11 @@ END NAVBAR STYLES
   color: white;
   width: 100%;
   max-width: 100%;
+  height: 80vh;
   padding: 5px 5px 5px 10px;
   position: relative;
-  -webkit-animation: moveVideoText 2.25s;
-  animation: moveVideoText 2.25s;
+  -webkit-animation: moveVideoText 1.25s;
+  animation: moveVideoText 1.25s;
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
@@ -231,6 +239,145 @@ END NAVBAR STYLES
 **************/
 
 /**************
+   SLIDESHOW STYLES
+**************/
+#Slideshow {
+  z-index: 5;
+}
+
+#Slideshow_Background {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.mySlides {
+  display: none; /* This prevents the images from being displayed, use JS to display these */
+}
+
+/* Slideshow section container */
+#Slideshow_Container {
+  width: 32.5vw; /* relative sizing of the container for the slideshow set to 32.5% of the viewport width */
+  height: auto;
+  padding-top: 1.5%;
+  position: relative; /*sets the container relative to its normal positioning */
+  margin: auto; /* horizontally center the container on the page */
+}
+
+/* remove the underline from the previous and next buttons*/
+#Slideshow_Container a {
+  text-decoration: none;
+}
+
+/* Images within the slideshow */
+.Slideshow_Images {
+  vertical-align: middle; /*center the images vertically within slideshow container */
+  height: auto;
+  box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  border-radius: 2%;
+}
+
+/* Next and previous buttons */
+.Previous,
+.Next {
+  cursor: pointer;
+  position: absolute; /* This makes the next and previous buttons position relative to the slideshow container */
+  top: 50%; /* This moves the buttons up in the slideshow container */
+  width: auto;
+  padding: 2vw;
+  color: darkgray;
+  font-weight: bold;
+  font-size: 2.5vw;
+  border-radius: 0 3px 3px 0;
+  user-select: none; /* this property -> user cannot highlight the text */
+  transition: 0.6s ease;
+}
+
+/* Position the next button on the right hand side */
+.Next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover effect on slide show buttons */
+.Previous:hover,
+.Next:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* background of the arrows transparent gray */
+  color: white; /*white arrows when hovered over */
+}
+
+/* Slideshow text */
+.text {
+  color: white;
+  padding: 1vw;
+  position: absolute; /*ensures the text is positioned within the image*/
+  bottom: 0;
+  width: 100%; /*element covers the full width of the image*/
+  text-align: center;
+  font-family: Perpetua, Rockwell Extra Bold;
+  letter-spacing: 0.1vw;
+  font-size: 1.5vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  border-radius: 0px 0px 7px 7px;
+}
+
+/* Dots styling */
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0.25vw;
+  background-color: white;
+  border-radius: 50%; /* Makes the dots circles by rounding each corner*/
+  display: inline-block; /* allows dots to sit next to eachother*/
+  transition: background-color 0.6s ease;
+  z-index: 1;
+}
+
+/* hover effect for slideshow dots */
+.active,
+.dot:hover {
+  background-color: black; /* Sets the color of the dots when active or hovered over */
+}
+
+/* Fade animation for slideshow */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  } /* image starts transparent */
+  to {
+    opacity: 1;
+  } /* image ends opaque */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  } /* image starts transparent */
+  to {
+    opacity: 1;
+  } /* image ends opaque */
+}
+
+/**************
+  END SLIDESHOW STYLES
+**************/
+
+/**************
    TABLE STYLES
 this section covers the styling of the columns and rows within the table 
 ****************/
@@ -242,16 +389,15 @@ this section covers the styling of the columns and rows within the table
 .Column_1 {
   float: left;
   width: 50%;
-  padding: 10px;
-  padding-top: 1.5%;
-  height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+  padding: 2.5% 10px 10px 10px;
+  height: 600px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text entered */
   background-color: rgb(232, 255, 255);
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
 @media screen and (max-width: 576px) {
   .Column_1 {
-    overflow: auto;
+    overflow: scroll;
   }
 }
 
@@ -260,20 +406,20 @@ this section covers the styling of the columns and rows within the table
   width: 50%;
   padding: 10px;
   padding-top: 1.5%;
-  height: 400px;
+  height: 600px;
   background-color: rgb(0, 56, 56);
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
-.Column_tall {
+/* .Column_tall {
   padding-top: 1%;
   height: 550px;
-}
+} */
 
-.special_image {
+/* .special_image {
   margin-top: 80px;
-  /* animation: zoominoutsinglefeatured 15s forwards; */
-}
+   animation: zoominoutsinglefeatured 15s forwards; 
+} */
 
 /* @keyframes zoominoutsinglefeatured {
   0% {
@@ -297,7 +443,7 @@ this section covers the styling of the columns and rows within the table
 ****************/
 
 /**************
-    CONTACT FORM STYLES
+    General CONTACT FORM STYLES
 ****************/
 input[type="text"] {
   width: 100%;
@@ -336,8 +482,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #8fffd6;
   color: black;
-  transform: scale(1.2);
-  transition: transform 1.5s;
+  transform: scale(1.01);
+  transition: transform 1s;
 }
 
 /* Form */
@@ -347,11 +493,8 @@ form {
   box-shadow: 0 0 10px #008181 inset;
   padding: 10px;
   font-family: "Trebuchet MS", Optima;
+  z-index: 10;
 }
-
-/**************
-    END CONTACT FORM STYLES
-*****/
 
 /***********************
     POP UP CONTACT FORM STYLES
@@ -365,42 +508,44 @@ form {
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+  bottom: 1.75vw;
+  right: 1.75vw;
+  width: 22vw;
+  z-index: 10;
 }
 
 /* popup form itself, hidden by default */
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
+  bottom: 0.5vw;
+  right: 0.5vw;
   border: 9px solid rgba(0, 129, 129, 0.45);
   border-radius: 5px;
-  z-index: 9;
+  z-index: 11;
 }
 
 /* form container styles */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 40vw;
+  padding: 1vw;
   background-color: white;
 }
 
 /* input fields set to full width */
 .form-container input[type="text"] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 0.93vw;
+  margin: 0.6vw 0 0.6vw 0;
   border: none;
   background: #f1f1f1;
+  font-size: 1vw;
 }
 
 /* focus on inputs, do something */
 .form-container input[type="text"]:focus,
 .form-container input[type="password"]:focus {
-  background-color: #ddd;
+  background-color: rgb(235, 235, 235);
   outline: none;
 }
 
@@ -426,4 +571,17 @@ form {
 .form-container .btn:hover,
 .open-button:hover {
   opacity: 1;
+  transition-duration: 1s;
+}
+
+/* STYLE FOR ALL BUTTONS */
+button {
+  font-family: "Trebuchet MS", Optima;
+  letter-spacing: 0.3vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 1.5vw;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
 }

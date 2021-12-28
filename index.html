@@ -7,11 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   </head>
-  <!-- END HEAD -->
 
-  <!-- BODY -->
+
 
   <body>  
     <!------------------------------------------------------ 
@@ -32,11 +30,11 @@
 
     <!-- NAV BAR -->
     <div class="Navbar">
-      <a class="active" href="#Home"
-        >Home
+      <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
+        <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
       </a>
     </div>
     <!-- END NAV BAR -->
@@ -65,7 +63,7 @@
           <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
           </p>
           <p class="center">
-          <span class="bio">My name is Tony B. Welcome to my portfolio website.<br>On it, I will tell you about my background and experience.
+          <span class="bio">Hello!<br>My name is Tony B. Welcome to my portfolio website!<br>This page is intended to tell you about my background and experience.
           <br>
           Thank you for stopping by and enjoy!</span>
         </p>
@@ -73,6 +71,59 @@
     </div>
     <!-- END VIDEO OVERLAY TEXT -->
     
+    <!-- SLIDESHOW SECTION -->
+    <div id="Slideshow">
+        <div id="Slidesow_Background">
+          <div id="Slideshow_Container">
+            <!--Slide 1/6-->
+            <div class="mySlides fade" style="display:block;">
+                <img class="Slideshow_Images" src="images/Selfie.png" alt="Picture of Tony">
+                <div class="text">I would love to assist you on your project!</div>
+            </div>   
+            <!--Slide 2/6-->
+            <div class="mySlides fade" style="display:none;">
+                <img class="Slideshow_Images" src="images/html-css-js.png" alt="HTML, CSS, and JS logos">
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+            </div>          
+            <!--Slide 3/6-->
+            <div class="mySlides fade" style="display:none;">
+                <img class="Slideshow_Images" src="images/c-sharp.png" alt="C# logo">
+                <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+            </div>            
+            <!--Slide 4/6-->
+            <div class="mySlides fade" style="display:none;">
+                <img class="Slideshow_Images" src="images/SQL.png" alt="SQL logo">
+                <div class="text">back end development, databases and SQL.</div>
+            </div>            
+            <!--Slide 5/6-->
+            <div class="mySlides fade" style="display:none;">
+                <img class="Slideshow_Images" src="images/Unity-Logo.png" alt="Unity">
+                <div class="text">I also have experience in 2D/3D development in the Unity Engine</div>
+            </div>            
+            <!--Slide 6/6-->
+            <div class="mySlides fade" style="display:none;">
+                <img class="Slideshow_Images" src="images/stock-contact.png" alt="Contact Image">
+                <div class="text">Contact me now!</div>
+            </div>
+             <!-- Previous and next buttons -->
+             <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- slideshow dots -->
+          <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
+      </div>
+    <!-- END SLIDESHOW SECTION -->
+
     <!-- ABOUT SECTION-->
     <div class="Row" id="About">
       <!--Left Column-->
@@ -85,14 +136,14 @@
         <p>
           I am a full-stack software developer who loves to code! Outside of coding, I enjoy playing guitar and spending time with my family.
           <br>
-          <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
+          <!-- <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray"> -->
         </p>
         <p>
           I am a graduate of
           <a href="https://www.learncodinganywhere.com" target="_blank"
             >The Tech Academy</a>&apos;s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,
           C# and more.
-          <br>
+          
           <div class="badges">
             <span class="badge badge-pill badge-warning">HTML</span>
             <span class="badge badge-pill badge-primary">CSS</span>
@@ -104,6 +155,7 @@
       </div>
     </div>
     <!-- END ABOUT SECTION-->
+    
     <!-- GITHUB SECTION -->
     <div class="Row" id="GitHub">
         <!--Left column-->
@@ -115,7 +167,7 @@
                 <p class="center"><a href="https://github.com/tbon27" target="_blank">Tony Bongiovanni's Github</a></p>
              
                 <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
-                <p style="text-align: center;">I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+                <p style="text-align: center;">I would love to work with you on your project. Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me!</p>
             </p>
         </div>
         <!--Right column-->
@@ -126,16 +178,17 @@
     </div>
     <!-- END GITHUB SECTION -->
 
-    <!-- CONTACT SECTION-->
+    <!-- (OLD) CONTACT SECTION-->
+<!--     
     <div class="Row" id="Contact">
-        <!--Contact image, left column-->
+
         <div class="Column_2 Column_tall">
             <img class="special_image" src="images/contact_image.png" alt="Contact_Image">
         </div>
-        <!--Contact form, right column-->
+
         <div class="Column_1 Column_tall">
             <h1 class="contactHeader">Contact</h1>
-            <!--This specifies where and how to send the form data; we are leaving it blank-->
+
             <form name="contactForm" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidateForm()" method="POST">
                 <label>Name:</label>
                     <input type="text" name="Name:" placeholder="Enter your name here">
@@ -148,13 +201,13 @@
                   <input type="submit" value="SUBMIT">
             </form>
         </div>
-    </div>
+    </div> -->
     <!-- END CONTACT SECTION-->
 
     <!-- POP UP CONTACT -->
     
-    <button class="open-button" onclick="openForm()">Open Contact Form</button>
-    <div class="form-popup" id="myForm">
+    <button class="open-button" onclick="openForm()">CONTACT</button>
+    <div class="form-popup" id="myForm" ondblclick="closeForm()">
     <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
       <label>Name:</label>
           <input type="text" name="Name:" placeholder="Enter your name here">
@@ -173,10 +226,7 @@
     
     <!--FOOTER SECTION-->
     <footer>
-        <p>
-            <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
-            <br>
-        </p>
+        <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
     </footer>
     <!-- END FOOTER SECTION-->
 
@@ -184,31 +234,33 @@
           MY JS 
     ------------------->
       <script>
-        function ValidateForm(){
-          let x = document.forms["contactForm"]["Name:"].value
-          let y = document.forms["contactForm"]["Email:"].value
-          let z = document.forms["contactForm"]["Phone:"].value
-          let a = document.forms["contactForm"]["Message:"].value
-          if(x==""){
-            alert("Name must be filled out");
-            return false;
-          }    
-          if(y==""){
-            alert("Email must be filled out");
-            return false;
-          }  
-          if(z==""){
-            alert("Phone must be filled out");
-            return false;
-          }  
-          if(a==""){
-            alert("Message must be filled out");
-            return false;
-          }
-        }
+        ////----- OLD form
+        // function ValidateForm(){
+        //   let x = document.forms["contactForm"]["Name:"].value
+        //   let y = document.forms["contactForm"]["Email:"].value
+        //   let z = document.forms["contactForm"]["Phone:"].value
+        //   let a = document.forms["contactForm"]["Message:"].value
+        //   if(x==""){
+        //     alert("Name must be filled out");
+        //     return false;
+        //   }    
+        //   if(y==""){
+        //     alert("Email must be filled out");
+        //     return false;
+        //   }  
+        //   if(z==""){
+        //     alert("Phone must be filled out");
+        //     return false;
+        //   }  
+        //   if(a==""){
+        //     alert("Message must be filled out");
+        //     return false;
+        //   }
+        // }
         
         //separate function for popup form validation
-        function ValidatePopUpForm(){
+        
+        function ValidatePopUpForm(){ //---NEW POPUP FORM
           let l = document.forms["PopUpForm"]["Name:"].value
           let m = document.forms["PopUpForm"]["Email:"].value
           let n = document.forms["PopUpForm"]["Phone:"].value
@@ -231,13 +283,15 @@
           }
         }
 
+        //The following has been moved to main.js
+        /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
         }
 
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
-        }
+        }*/
       </script>
     <!---------------- 
         END MY JS 
@@ -248,5 +302,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
   </body>
 </html>
