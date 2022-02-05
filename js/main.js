@@ -58,3 +58,16 @@ document.addEventListener(
   },
   false
 );
+
+
+
+var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+    trigger: 'focus'
+})
+var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
+    trigger: 'focus'
+})
+var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
+    trigger: 'focus'
+})
+

@@ -1,161 +1,161 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tony Bongiovanni</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
+
+
+</head>
 
 
 
-  <body>  
-    <!------------------------------------------------------ 
-    This inline script is necessary (as opposed to a 
-    script loaded from a separate file) to prevent flickering 
+<body>
+    <!------------------------------------------------------
+    This inline script is necessary (as opposed to a
+    script loaded from a separate file) to prevent flickering
     -------------------------------------------------------->
     <script>
-    //add the fade-out class to the body as soon as the page loads
-    document.body.classList.add('fade-out');
-    console.log("fadeout added");
-    // remove the fade-out class from the body once the page is loaded
-    window.addEventListener('DOMContentLoaded', () => {
-      document.body.classList.remove('fade-out');
-    });
-    console.log("fadeout removed");
+        //add the fade-out class to the body as soon as the page loads
+        document.body.classList.add('fade-out');
+        console.log("fadeout added");
+        // remove the fade-out class from the body once the page is loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+        console.log("fadeout removed");
     </script>
 
 
     <!-- NAV BAR -->
     <div class="Navbar">
-      <a class="active" href="#Home">Home</a>
+        <a class="active" href="#Home">Home</a>
         <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
         <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
-      </a>
+        </a>
     </div>
     <!-- END NAV BAR -->
     <br>
     <br>
     <!-- BG VIDEO-->
     <div id="Home">
-      <video autoplay muted loop id="Heading-Video">
-        <source src="images/video/video_header.mp4" type="video/mp4"/>
-        <!--Display message if video fails-->
-        Your browser does not support HTML5 video.
-      </video>
+        <video autoplay muted loop id="Heading-Video">
+            <source src="images/video/video_header.mp4" type="video/mp4" />
+            <!--Display message if video fails-->
+            Your browser does not support HTML5 video.
+        </video>
     </div>
     <!-- END BG VIDEO-->
-
     <!-- VIDEO OVERLAY TEXT -->
     <div class="Video_Text">
-      <h1 class="white-text">Tony Bongiovanni's Portfolio</h1>
-      <strong>
-        <p class="center">
-          <q>Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
-          </q>
-          <br>
-          -Shigeru Miyamoto
-          <br>
-          <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
-          </p>
-          <p class="center">
-          <span class="bio">Hello!<br>My name is Tony B. Welcome to my portfolio website!<br>This page is intended to tell you about my background and experience.
-          <br>
-          Thank you for stopping by and enjoy!</span>
-        </p>
-      </strong>
+        <h1 class="white-text">Tony Bongiovanni's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>
+                    Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
+                </q>
+                <br>
+                -Shigeru Miyamoto
+                <br>
+                <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
+            </p>
+            <p class="center">
+                <span class="bio">
+                    Hello!<br>My name is Tony B. Welcome to my portfolio website!<br>This page is intended to tell you about my background and experience.
+                    <br>
+                    Thank you for stopping by and enjoy!
+                </span>
+            </p>
+        </strong>
     </div>
     <!-- END VIDEO OVERLAY TEXT -->
-    
     <!-- SLIDESHOW SECTION -->
     <div id="Slideshow">
         <div id="Slidesow_Background">
-          <div id="Slideshow_Container">
-            <!--Slide 1/6-->
-            <div class="mySlides fade" style="display:block;">
-                <img class="Slideshow_Images" src="images/Selfie.png" alt="Picture of Tony">
-                <div class="text">I would love to assist you on your project!</div>
-            </div>   
-            <!--Slide 2/6-->
-            <div class="mySlides fade" style="display:none;">
-                <img class="Slideshow_Images" src="images/html-css-js.png" alt="HTML, CSS, and JS logos">
-                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-            </div>          
-            <!--Slide 3/6-->
-            <div class="mySlides fade" style="display:none;">
-                <img class="Slideshow_Images" src="images/c-sharp.png" alt="C# logo">
-                <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-            </div>            
-            <!--Slide 4/6-->
-            <div class="mySlides fade" style="display:none;">
-                <img class="Slideshow_Images" src="images/SQL.png" alt="SQL logo">
-                <div class="text">back end development, databases and SQL.</div>
-            </div>            
-            <!--Slide 5/6-->
-            <div class="mySlides fade" style="display:none;">
-                <img class="Slideshow_Images" src="images/Unity-Logo.png" alt="Unity">
-                <div class="text">I also have experience in 2D/3D development in the Unity Engine</div>
-            </div>            
-            <!--Slide 6/6-->
-            <div class="mySlides fade" style="display:none;">
-                <img class="Slideshow_Images" src="images/stock-contact.png" alt="Contact Image">
-                <div class="text">Contact me now!</div>
+            <div id="Slideshow_Container">
+                <!--Slide 1/6-->
+                <div class="mySlides fade" style="display:block;">
+                    <img class="Slideshow_Images" src="images/Selfie.png" alt="Picture of Tony">
+                    <div class="text">I would love to assist you on your project!</div>
+                </div>
+                <!--Slide 2/6-->
+                <div class="mySlides fade" style="display:none;">
+                    <img class="Slideshow_Images" src="images/html-css-js.png" alt="HTML, CSS, and JS logos">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+                <!--Slide 3/6-->
+                <div class="mySlides fade" style="display:none;">
+                    <img class="Slideshow_Images" src="images/c-sharp.png" alt="C# logo">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                </div>
+                <!--Slide 4/6-->
+                <div class="mySlides fade" style="display:none;">
+                    <img class="Slideshow_Images" src="images/SQL.png" alt="SQL logo">
+                    <div class="text">back end development, databases and SQL.</div>
+                </div>
+                <!--Slide 5/6-->
+                <div class="mySlides fade" style="display:none;">
+                    <img class="Slideshow_Images" src="images/Unity-Logo.png" alt="Unity">
+                    <div class="text">I also have experience in 2D/3D development in the Unity Engine</div>
+                </div>
+                <!--Slide 6/6-->
+                <div class="mySlides fade" style="display:none;">
+                    <img class="Slideshow_Images" src="images/stock-contact.png" alt="Contact Image">
+                    <div class="text">Contact me now!</div>
+                </div>
+                <!-- Previous and next buttons -->
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-             <!-- Previous and next buttons -->
-             <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-             <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
+            <br>
 
-          <!-- slideshow dots -->
-          <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-          </div>
+            <!-- slideshow dots -->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </div>
-      </div>
+    </div>
     <!-- END SLIDESHOW SECTION -->
-
     <!-- ABOUT SECTION-->
     <div class="Row" id="About">
-      <!--Left Column-->
-      <div class="Column_2">
-        <img src="images/image_1.png" alt="image_1" />
-      </div>
-      <!--Right column-->
-      <div class="Column_1">
-        <h1>About</h1>
-        <p>
-          I am a full-stack software developer who loves to code! Outside of coding, I enjoy playing guitar and spending time with my family.
-          <br>
-          <!-- <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray"> -->
-        </p>
-        <p>
-          I am a graduate of
-          <a href="https://www.learncodinganywhere.com" target="_blank"
-            >The Tech Academy</a>&apos;s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,
-          C# and more.
-          
-          <div class="badges">
-            <span class="badge badge-pill badge-warning">HTML</span>
-            <span class="badge badge-pill badge-primary">CSS</span>
-            <span class="badge badge-pill badge-danger">JavaScript</span>
-            <span class="badge badge-pill badge-light">SQL</span>
-            <span class="badge badge-pill badge-success">C#</span>
-          </div>
-        </p>
-      </div>
+        <!--Left Column-->
+        <div class="Column_2">
+            <img src="images/image_1.png" alt="image_1" />
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a full-stack software developer who loves to code! Outside of coding, I enjoy playing guitar and spending time with my family.
+                <br>
+                <!-- <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray"> -->
+            </p>
+            <p>
+                I am a graduate of
+                <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>&apos;s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,
+                C# and more.
+
+                <div class="badges">
+                    <span class="badge badge-pill badge-warning">HTML</span>
+                    <span class="badge badge-pill badge-primary">CSS</span>
+                    <span class="badge badge-pill badge-danger">JavaScript</span>
+                    <span class="badge badge-pill badge-light">SQL</span>
+                    <span class="badge badge-pill badge-success">C#</span>
+                </div>
+            </p>
+        </div>
     </div>
     <!-- END ABOUT SECTION-->
-    
     <!-- GITHUB SECTION -->
     <div class="Row" id="GitHub">
         <!--Left column-->
@@ -164,76 +164,79 @@
             <p style="text-align: center;">
                 You can view my coding projects on my GitHub profile here:
                 <br>
-                <p class="center"><a href="https://github.com/tbon27" target="_blank">Tony Bongiovanni's Github</a></p>
-             
-                <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray">
-                <p style="text-align: center;">I would love to work with you on your project. Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me!</p>
-            </p>
+            <p class="center"><a href="https://github.com/tbon27" target="_blank">Tony's projects on Github</a></p>
+
+            <!--popovers-->
+            <p class="center"><a tabindex="0" class="btn btn-lg btn-warning popover-dismiss" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="HTML/CSS Projects" data-bs-content="Vacation Resort website: A mock homepage with a stylish reservation form and information, Movie Theater website: A styled informational page with movie showtimes and info, and a Member Rewards sign up form, and more!">Peek at my HTML/CSS...</a></p>
+
+            <p class="center"><a tabindex="0" class="btn btn-lg btn-danger popover-dismiss2" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="focus" data-html="true" title="JavaScript Projects" data-bs-content="Pizza Menu: A dynamic webpage that calculates the price of a customer's order, Tic-Tac-Toe game: A customized version of the classic game, allowing for two player battles, and more!">Peek at my JavaScript...</a></p>
+
+            <p class="center"><a tabindex="0" class="btn btn-lg btn-success popover-dismiss3" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="C# Projects" data-bs-content="Casino Game - Twenty One: A console app version of the classic card game allowing a user to bet whatever amount they desire, Car Insurance Quote App: An MVC web app that takes in customer information and calculates a quote based on the user info, and more!">Peek at my C#...</a></p>
+
+            <p style="text-align: center;">I would love to work with you on your project. Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me!</p>
+
         </div>
         <!--Right column-->
         <div class="Column_2">
             <a href="https://github.com/tbon27" target="_blank">
-              <img src="images/GitHub.png" alt="GitHub Logo"></a>
+                <img src="images/GitHub.png" alt="GitHub Logo">
+            </a>
         </div>
     </div>
     <!-- END GITHUB SECTION -->
-
     <!-- (OLD) CONTACT SECTION-->
-<!--     
-    <div class="Row" id="Contact">
+    <!--
+      <div class="Row" id="Contact">
 
-        <div class="Column_2 Column_tall">
-            <img class="special_image" src="images/contact_image.png" alt="Contact_Image">
-        </div>
+          <div class="Column_2 Column_tall">
+              <img class="special_image" src="images/contact_image.png" alt="Contact_Image">
+          </div>
 
-        <div class="Column_1 Column_tall">
-            <h1 class="contactHeader">Contact</h1>
+          <div class="Column_1 Column_tall">
+              <h1 class="contactHeader">Contact</h1>
 
-            <form name="contactForm" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidateForm()" method="POST">
-                <label>Name:</label>
-                    <input type="text" name="Name:" placeholder="Enter your name here">
-                <label>Email:</label>
-                    <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
-                  <label>Phone:</label>
-                    <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
-                <label>Message:</label>
-                    <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
-                  <input type="submit" value="SUBMIT">
-            </form>
-        </div>
-    </div> -->
+              <form name="contactForm" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidateForm()" method="POST">
+                  <label>Name:</label>
+                      <input type="text" name="Name:" placeholder="Enter your name here">
+                  <label>Email:</label>
+                      <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
+                    <label>Phone:</label>
+                      <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
+                  <label>Message:</label>
+                      <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
+                    <input type="submit" value="SUBMIT">
+              </form>
+          </div>
+      </div> -->
     <!-- END CONTACT SECTION-->
-
     <!-- POP UP CONTACT -->
-    
+
     <button class="open-button" onclick="openForm()">CONTACT</button>
     <div class="form-popup" id="myForm" ondblclick="closeForm()">
-    <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
-      <label>Name:</label>
-          <input type="text" name="Name:" placeholder="Enter your name here">
-      <label>Email:</label>
-          <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
-        <label>Phone:</label>
-          <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
-      <label>Message:</label>
-          <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
-        <input class="btn" type="submit" value="SUBMIT">
-        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-    </form>
-  </div>
+        <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
+            <label>Name:</label>
+            <input type="text" name="Name:" placeholder="Enter your name here">
+            <label>Email:</label>
+            <input type="text" name="Email:" id="Email" placeholder="Enter your email here">
+            <label>Phone:</label>
+            <input type="text" name="Phone:" id="Phone" placeholder="Enter your phone number here">
+            <label>Message:</label>
+            <input type="text" name="Message:" id="Message" placeholder="Enter your message here">
+            <input class="btn" type="submit" value="SUBMIT">
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+        </form>
+    </div>
 
     <!-- END POP UP CONTACT -->
-    
     <!--FOOTER SECTION-->
     <footer>
         <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
     </footer>
     <!-- END FOOTER SECTION-->
-
-    <!---------------- 
-          MY JS 
+    <!----------------
+          MY JS
     ------------------->
-      <script>
+    <script>
         ////----- OLD form
         // function ValidateForm(){
         //   let x = document.forms["contactForm"]["Name:"].value
@@ -243,47 +246,48 @@
         //   if(x==""){
         //     alert("Name must be filled out");
         //     return false;
-        //   }    
+        //   }
         //   if(y==""){
         //     alert("Email must be filled out");
         //     return false;
-        //   }  
+        //   }
         //   if(z==""){
         //     alert("Phone must be filled out");
         //     return false;
-        //   }  
+        //   }
         //   if(a==""){
         //     alert("Message must be filled out");
         //     return false;
         //   }
         // }
-        
+
         //separate function for popup form validation
-        
-        function ValidatePopUpForm(){ //---NEW POPUP FORM
-          let l = document.forms["PopUpForm"]["Name:"].value
-          let m = document.forms["PopUpForm"]["Email:"].value
-          let n = document.forms["PopUpForm"]["Phone:"].value
-          let o = document.forms["PopUpForm"]["Message:"].value
-          if(l==""){
-            alert("Name must be filled out");
-            return false;
-          }    
-          if(m==""){
-            alert("Email must be filled out");
-            return false;
-          }  
-          if(n==""){
-            alert("Phone must be filled out");
-            return false;
-          }  
-          if(o==""){
-            alert("Message must be filled out");
-            return false;
-          }
+
+
+        function ValidatePopUpForm() { //---NEW POPUP FORM
+            let l = document.forms["PopUpForm"]["Name:"].value
+            let m = document.forms["PopUpForm"]["Email:"].value
+            let n = document.forms["PopUpForm"]["Phone:"].value
+            let o = document.forms["PopUpForm"]["Message:"].value
+            if (l == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (m == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (n == "") {
+                alert("Phone must be filled out");
+                return false;
+            }
+            if (o == "") {
+                alert("Message must be filled out");
+                return false;
+            }
         }
 
-        //The following has been moved to main.js
+                  //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
@@ -292,18 +296,18 @@
         function closeForm() {
           document.getElementById("myForm").style.display = "none";
         }*/
-      </script>
-    <!---------------- 
-        END MY JS 
+    </script>
+    <!----------------
+        END MY JS
     ------------------->
-
-  <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
     <script src="js/main.js"></script>
 
-  </body>
+</body>
 </html>
