@@ -3,8 +3,10 @@
 
 ### My Porfolio Website
 The purpose of this repository is to store code for my portfolio website on Github.
-
-### [tbon27.github.io](index.html)
+- [tbon27.github.io repository](index.html)
+- 
+### Check Out MY Porfolio Website
+- [tbon27.github.io website](https://tbon27.github.io/)
 
 
 
