@@ -132,7 +132,7 @@ p {
   font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
   letter-spacing: 0.1vw;
-  font-size: 1.75vw;
+  font-size: 1.5vw;
   padding-left: 1vw;
   padding-right: 1vw;
 }
@@ -185,6 +185,7 @@ img:hover {
     margin-top: 150px;
   }
 }
+
 
 footer {
   padding: 1%;
@@ -293,19 +294,19 @@ END NAVBAR STYLES
    VIDEO STYLES
 **************/
 
-    #Heading-Video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        z-index: -1;
-    }
-    /* Screens that are 576px and smaller will not display the background video */
-    @media screen and (max-width: 576px) {
-        #Heading_Video {
-    display: none;
-  }
+#Heading-Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
 }
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #Heading_Video {
+        display: none;
+        }
+    }
 
 .Video_Text {
   background: rgba(0, 0, 0, 0.7);
@@ -590,6 +591,7 @@ button cancel {
     height: auto;
 }
 
+
 /* Hover effect for submit button */
 input[type="submit"]:hover {
   background-color: #8fffd6;
@@ -686,11 +688,13 @@ form {
 }
 
 .form-container .cancel {
-  background-color: red;
+  background-color: maroon;
   font-family: Perpetua, Rockwell Extra Bold;
   font-weight: bold;
   font-size: 16px;
 }
+
+.form-container .cancel:hover {color:rgba(255,255,255,.97);}
 
 .form-container .btn:hover,
 .open-button:hover {
@@ -707,4 +711,12 @@ form {
 .popover {
 
 
+}
+
+
+/* Screens that are 576px and smaller will not display the gamejam */
+@media screen and (max-width: 576px) {
+    .gameJam {
+        display: none;
+    }
 }

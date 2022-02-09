@@ -39,25 +39,29 @@
 
     </div>
 
+    <input type=button onClick="location.href='https://play.unity.com/mg/other/webgl-builds-70441'"
+           value='Play Asteroid Pool!' class="btn btn-warning dropdown1" style="right:220px; ">
 
-    <!--<div class="dropdown" style="z-index: 11; display: block; float: right; position: fixed; padding: 7px 5px;; right: 0;">
+    <!--<input type=button onclick="window.open(this.getAttribute('data-href'))" data-href="https://play.unity.com/mg/other/webgl-builds-70441" return false;" class="btn btn-warning dropdown1" style="right:220px;">View Project-->
+
+
+    <div class="dropdown" style="z-index: 11; display: block; float: right; position: fixed; padding: 7px 5px;; right: 0;">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="z-index:11;">
-            Quick Nav
+            Navigate on this page
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
-            <a class="dropdown-item" href="#Slideshow">Slideshow</a>
-            <a class="dropdown-item" href="#About">About</a>
-            <a class="dropdown-item" href="#Github">GitHub</a>
-            <a class="dropdown-item" href="#Unity">Unity</a>
+            <a class="dropdown-item" href="#AsteroidPool">Asteroid Pool</a>
+            <a class="dropdown-item" href="#SpaceShooter">Space Shooter 2</a>
+
         </div>
-    </div>-->
+    </div>
     <!-- END NAV BAR -->
     <br>
     <br>
     <!-- BG VIDEO-->
     <div id="Home">
         <video autoplay muted loop id="Heading-Video">
-            <source src="images/video/video_header.mp4" type="video/mp4" />
+            <source src="images/video/unityStockvid.mp4" type="video/mp4" width="1100" />
             <!--Display message if video fails-->
             Your browser does not support HTML5 video.
         </video>
@@ -66,18 +70,99 @@
     <!-- VIDEO OVERLAY TEXT -->
     <div class="Video_Text">
         <div>
-            <h1 class="white-text" id="title1">Unity Engine</h1>
+            <h1 class="white-text" id="title1">Projects in Unity Engine</h1>
         </div>
-
         <p class="center">
             <span class="bio">
-                I have been working with the Unity Engine for 2+ years. Here is some information about the projects that I have worked on.
+                <br />
+                A life-long bond with video games finally reached new levels since my introduction to the Unity Engine.<br />
+                Building upon various creative projects over the years my skillset has broadened.<br />
+                From Music, to Animation, to Programming, to 3D Modeling, to Creative Writing...<br />
+                eventually resulting in the combination of all areas of interests and skills: 
+                <a href="https://unity.com/">The Unity Game Engine</a><br /><br />
+                My Unity development focuses on creating Games and practical Real World Applications <br />
+                with hopes that his products ultimately support positivity, inclusiveness, growth, and FUN!<br />
                 <br>
                 Thank you for stopping by and enjoy!
             </span>
+        <p style="text-align: center;">Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me for collaborations on your projects!</p>
         </p>
     </div>
-    <!-- END VIDEO OVERLAY TEXT -->
+
+    <!-- ABOUT SECTION-->
+    <div class="Row" id="AsteroidPool">
+        <!--Left Column-->
+        <div class="Column_2" style="height: 60vh;">
+            <!--<div class="gameJam">
+            <iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr=""
+                    mozallowfullscreen="true" src="https://play.unity3dusercontent.com/webgl/db4c8134-5598-443d-89a5-b5515a8446de?screenshot=false&embedType=embed" height="500" width="408" onmousewheel="" webkitallowfullscreen="true"></iframe>-->
+            <!-- ASTEROID POOL VIDEO -->
+            <div class="apVid center" style="padding-top: 10px;">
+                <video controls style="width:40vw;">
+                    <source src="images/video/GJ1PostFinalNewCut.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <div>
+                    <p class="center" style="color: white;">Asteroid Pool: Development Recap</p>
+                </div>
+            </div>
+        </div>
+        <!--Right column-->
+        <div class="Column_1" style="height: 60vh;">
+            <br />
+            <h1>Asteroid Pool</h1>
+            <p style="text-align:center">
+                Asteroid Pool is a submission for CWC Game Jam presented by Unity Technologies, June 29, 2021-July 2,2021.<br />
+                Theme: "Modernizing a Classic"<br />
+
+            </p>
+            <div style="background-color: rgba(0,0,0,0.08); padding: 0px 5px 1px 5px;">
+                <p class="center" style="margin: -15px 0px -3px 20px; font-weight:700; font-style:oblique">Unity Staff Rating:</p>
+                <p class="center" style="margin: -5px 0px -3px 20px; font-weight:300; font-size: 1.1vw;">Jacek Mackiewicz, Content Team QA & UX </p>
+                <ul class="ratings-list center" style="list-style:none; left: -500px;">
+                    <li>Aesthetics: 4/5</li>
+                    <li>Intuitiveness: 3/5</li>
+                    <li>Controls: 4/5</li>
+                    <li>Accessibility: 1/5</li>
+                    <li>Usage of Theme: 5/5</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- END ABOUT SECTION-->
+    <!-- GITHUB SECTION -->
+    <div class="Row" id="SpaceShooter">
+        <!--Left column-->
+        <div class="Column_1" style="height: 60vh;">
+            <br />
+
+            <h1>Space Shooter 2</h1>
+            <p style="text-align: center;">
+                This retro-style project was inspired by the Udemy course<br />
+                entitled "Unity 2D and 3D Games From Scratch and learn C# Scripting" by Raja Haris.
+            </p>
+
+
+
+        </div>
+        <!--Right column-->
+        <div class="Column_2" style="height: 60vh;">
+            <!-- SpaceShooter VIDEO -->
+            <div class="ssVid center" style="padding-top: 10px;">
+                <video controls style="width:40vw;">
+                    <source src="images/video/SpaceShooter2.mp4"
+                            type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+                <div>
+                    <p class="center" style="color: white;">Space Shooter 2: Gameplay Demo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END GITHUB SECTION -->
     <!-- POP UP CONTACT -->
 
     <button class="open-button btn" onclick="openForm()">CONTACT</button>
@@ -156,7 +241,7 @@
             }
         }
 
-                       //The following has been moved to main.js
+                                                   //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
@@ -174,6 +259,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 
     <script src="js/main.js"></script>

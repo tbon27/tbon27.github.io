@@ -1,4 +1,6 @@
+////////////////////////////////
 // Open and close contact form
+////////////////////////////////
 function openForm() {
   document.getElementById("myForm").style.display = "block";
   console.log("Button clicked");
@@ -40,6 +42,11 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block"; //displays the image in slideshow
   dots[slideIndex - 1].className += " active"; // add the active styling to the dot associated with the image
 }
+////////////////////////////////
+// END Open and close contact form
+////////////////////////////////
+
+
 
 // The following is to create close the contact form when the user clicks off of it
 // Add event listener for any clicks on the website
@@ -63,12 +70,11 @@ document.addEventListener(
 
 var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
     trigger: 'focus'
-})
+});
 var popover2 = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
     trigger: 'focus'
-})
+});
 var popover3 = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
     trigger: 'focus'
-})
-
+});
 
