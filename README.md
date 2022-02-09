@@ -1,10 +1,10 @@
-# tbon27.github.io
+# Portfolio Website Repo
+<img src="https://pbs.twimg.com/profile_images/1393262111606796289/h0E0LqE6_400x400.jpg" width="250" height="250">
 
-### Welcome to my Portfolio repository!
+The purpose of this repository is to store code for my portfolio website on Github.
 
-#### The purpose of this repository is to store coding projects for **The Tech Academy** coursework, and showcase my portfolio.
-
-### [My Portfolio Site](index.html)
+### Check Out My Porfolio Website!
+- [tbon27.github.io](https://tbon27.github.io/)
 
 
 
