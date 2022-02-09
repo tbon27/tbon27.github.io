@@ -79,7 +79,9 @@ q {
 .bio{
     font-size: 1.5vw;
     font-family: "Georgia", Optima, sans-serif;
-    background: rgba(168, 241, 241, 0.07);
+/*    background: rgba(168, 241, 241, 0.03);
+*/    padding: 0;
+    bottom: 0;
 } 
 
 .badges {
@@ -129,7 +131,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
+  box-shadow: 5px 10px rgba(255,255,255,.3);
 }
 
 img:hover {
@@ -226,23 +228,35 @@ NAVBAR STYLES
     }
 /**************
 END NAVBAR STYLES
-**************/
 
-/**************
+**************/
+.dropdown {
+    -webkit-animation: moveNavText 2s;
+    animation: moveNavText 2s;
+}
+@keyframes moveQuick {
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: 0vw;
+    }
+}
+    /**************
    VIDEO STYLES
 **************/
 
-#Heading-Video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  z-index: -1;
-}
-
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
-  #Heading_Video {
+    #Heading-Video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        z-index: -1;
+    }
+    /* Screens that are 576px and smaller will not display the background video */
+    @media screen and (max-width: 576px) {
+        #Heading_Video {
     display: none;
   }
 }
@@ -252,21 +266,21 @@ END NAVBAR STYLES
   color: white;
   width: 100%;
   max-width: 100%;
-  height: 85vh;
-  top: -15px;
+  height: 90vh;
+  top: 0px;
   padding: 5px 5px 0px 5px;
   position: relative;
-  -webkit-animation: moveVideoText 1.25s;
-  animation: moveVideoText 1.25s;
+  -webkit-animation: moveVideoText 1.5s;
+  animation: moveVideoText 1.5s;
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
 @keyframes moveVideoText {
   from {
-    top: -100vw;
+    top: -800px;
   }
   to {
-    top: 0vw;
+    top: 0px;
   }
 }
 
@@ -279,6 +293,7 @@ END NAVBAR STYLES
 **************/
 #Slideshow {
   z-index: 5;
+  padding-top: 10px;
 }
 
 #Slideshow_Background {
@@ -293,7 +308,7 @@ END NAVBAR STYLES
 #Slideshow_Container {
   width: 32.5vw; /* relative sizing of the container for the slideshow set to 32.5% of the viewport width */
   height: auto;
-  padding-top: 1.5%;
+  padding-top: 1%;
   position: relative; /*sets the container relative to its normal positioning */
   margin: auto; /* horizontally center the container on the page */
 }
@@ -559,7 +574,7 @@ form {
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 1.75vw;
+  bottom: 1vw;
   right: 1.75vw;
   width: 22vw;
   z-index: 10;
