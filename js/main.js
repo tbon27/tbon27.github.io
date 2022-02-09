@@ -64,10 +64,11 @@ document.addEventListener(
 var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
     trigger: 'focus'
 })
-var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
+var popover2 = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
     trigger: 'focus'
 })
-var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
+var popover3 = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
     trigger: 'focus'
 })
+
 

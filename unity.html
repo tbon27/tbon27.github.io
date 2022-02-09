@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tony Bongiovanni</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!------------------------------------------------------
+    This inline script is necessary (as opposed to a
+    script loaded from a separate file) to prevent flickering
+    -------------------------------------------------------->
+    <script>
+        //add the fade-out class to the body as soon as the page loads
+        document.body.classList.add('fade-out');
+        console.log("fadeout added");
+        // remove the fade-out class from the body once the page is loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+        console.log("fadeout removed");
+    </script>
+
+    <!-- NAV BAR -->
+    <div class="Navbar">
+        <a href="./index.html">Home</a>
+        <!--<a href="#Slideshow">Slideshow</a>-->
+        <a class="active" href="#Unity">Unity Projects</a>
+        <a href="#About">About</a>
+        <!--<a href="#GitHub">GitHub</a>-->
+
+        <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
+
+    </div>
+    <!-- END NAV BAR -->
+    <br>
+    <br>
+    <!-- BG VIDEO-->
+    <div id="Home">
+        <video autoplay muted loop id="Heading-Video">
+            <source src="images/video/video_header.mp4" type="video/mp4" />
+            <!--Display message if video fails-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!-- END BG VIDEO-->
+    <!-- VIDEO OVERLAY TEXT -->
+    <div class="Video_Text">
+        <div>
+            <h1 class="white-text" id="title1">Unity Engine</h1>
+        </div>
+
+        <p class="center">
+            <span class="bio">
+                I have been working with the Unity Engine for 2+ years. Here is some information about the projects that I have worked on.
+                <br>
+                Thank you for stopping by and enjoy!
+            </span>
+        </p>
+    </div>
+    <!-- END VIDEO OVERLAY TEXT -->
+    <!-- POP UP CONTACT -->
+
+    <button class="open-button" onclick="openForm()">CONTACT</button>
+    <div class="form-popup" id="myForm" ondblclick="closeForm()">
+        <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
+            <label>Name:</label>
+            <input type="text" name="Name:" placeholder="Enter your name here">
+            <label>Email:</label>
+            <input type="text" name="Email:" id="Email" placeholder="Enter your email here">
+            <label>Phone:</label>
+            <input type="text" name="Phone:" id="Phone" placeholder="Enter your phone number here">
+            <label>Message:</label>
+            <input type="text" name="Message:" id="Message" placeholder="Enter your message here">
+            <input class="btn" type="submit" value="SUBMIT">
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+        </form>
+    </div>
+
+    <!-- END POP UP CONTACT -->
+    <!--FOOTER SECTION-->
+    <footer>
+        <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
+    </footer>
+    <!-- END FOOTER SECTION-->
+    <!----------------
+          MY JS
+    ------------------->
+    <script>
+        ////----- OLD form
+        // function ValidateForm(){
+        //   let x = document.forms["contactForm"]["Name:"].value
+        //   let y = document.forms["contactForm"]["Email:"].value
+        //   let z = document.forms["contactForm"]["Phone:"].value
+        //   let a = document.forms["contactForm"]["Message:"].value
+        //   if(x==""){
+        //     alert("Name must be filled out");
+        //     return false;
+        //   }
+        //   if(y==""){
+        //     alert("Email must be filled out");
+        //     return false;
+        //   }
+        //   if(z==""){
+        //     alert("Phone must be filled out");
+        //     return false;
+        //   }
+        //   if(a==""){
+        //     alert("Message must be filled out");
+        //     return false;
+        //   }
+        // }
+
+        //separate function for popup form validation
+
+
+        function ValidatePopUpForm() { //---NEW POPUP FORM
+            let l = document.forms["PopUpForm"]["Name:"].value
+            let m = document.forms["PopUpForm"]["Email:"].value
+            let n = document.forms["PopUpForm"]["Phone:"].value
+            let o = document.forms["PopUpForm"]["Message:"].value
+            if (l == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (m == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (n == "") {
+                alert("Phone must be filled out");
+                return false;
+            }
+            if (o == "") {
+                alert("Message must be filled out");
+                return false;
+            }
+        }
+
+               //The following has been moved to main.js
+        /*
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }*/
+    </script>
+    <!----------------
+        END MY JS
+    ------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

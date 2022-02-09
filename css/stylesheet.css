@@ -40,10 +40,15 @@ h1:hover {
     color: white;
     background: rgba(168, 241, 241, 0.07);
     /* width: auto;*/
+    width:100%;
     max-width: 100%;
     height: 90px;
     font-weight: 900;
+    font-size: 2.25vw;
     text-shadow: 5px 3.5px rgba(0, 20, 20, .92);
+    padding-top: 90px;
+    padding-bottom: 80px;
+    margin: -30px 0 0 0 ;
 }
 
 q {
@@ -55,6 +60,7 @@ q {
     font-size: 1vw;
     padding-bottom: 2px;
     margin-top: -15px;
+    font-family: "Georgia", Optima, sans-serif;
 }
 
 .smiley{
@@ -70,10 +76,10 @@ q {
   font-size: 2.25vw;
 }
 
-.bio {
-    font-size: 2vw;
+.bio{
+    font-size: 1.5vw;
     font-family: "Georgia", Optima, sans-serif;
-    background: rgba(168, 241, 241, 0.02);
+    background: rgba(168, 241, 241, 0.07);
 } 
 
 .badges {
@@ -123,6 +129,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 25px;
 }
 
 img:hover {
@@ -134,7 +141,7 @@ img:hover {
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
   img {
-    height: 100px;
+    height: 150px;
     margin-top: 150px;
   }
 }
@@ -173,18 +180,17 @@ NAVBAR STYLES
 }
 
 .Navbar a {
-  float: left;
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: Avant Garde, Helvetica;
-  font-size: 20px;
-  text-align: center;
-  position: relative;
-  -webkit-animation: moveNavText 1.75s;
-  animation: moveNavText 1.75s;
-  border-radius: 0 0 25% 25%;
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Georgia", Optima, sans-serif;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 1.75s;
+    animation: moveNavText 1.75s;
+    border-radius: 0 0 25% 25%;
 }
 
 @keyframes moveNavText {
@@ -246,8 +252,9 @@ END NAVBAR STYLES
   color: white;
   width: 100%;
   max-width: 100%;
-  height: 80vh;
-  padding: 5px 5px -5px 5px;
+  height: 85vh;
+  top: -15px;
+  padding: 5px 5px 0px 5px;
   position: relative;
   -webkit-animation: moveVideoText 1.25s;
   animation: moveVideoText 1.25s;
@@ -313,7 +320,7 @@ END NAVBAR STYLES
   top: 50%; /* This moves the buttons up in the slideshow container */
   width: auto;
   padding: 2vw;
-  color: darkgray;
+  color: rgba(0,20,20,.85);
   font-weight: bold;
   font-size: 2.5vw;
   border-radius: 0 3px 3px 0;
@@ -334,7 +341,7 @@ END NAVBAR STYLES
     0,
     0,
     0,
-    0.8
+    0.4
   ); /* background of the arrows transparent gray */
   color: white; /*white arrows when hovered over */
 }
@@ -345,6 +352,7 @@ END NAVBAR STYLES
   padding: 1vw;
   position: absolute; /*ensures the text is positioned within the image*/
   bottom: 0;
+  height: 120px;
   width: 100%; /*element covers the full width of the image*/
   text-align: center;
   font-family: Perpetua, Rockwell Extra Bold;
@@ -353,6 +361,7 @@ END NAVBAR STYLES
   background-color: rgba(0, 0, 0, 0.75);
   font-weight: bold;
   border-radius: 0px 0px 7px 7px;
+  margin-top: auto;
 }
 
 /* Dots styling */
@@ -509,6 +518,17 @@ input[type="submit"] {
   font-family: Perpetua, Rockwell Extra Bold;
 }
 
+button cancel {
+    font-family: "Trebuchet MS", Optima;
+    letter-spacing: 0.3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
 /* Hover effect for submit button */
 input[type="submit"]:hover {
   background-color: #8fffd6;
@@ -605,17 +625,7 @@ form {
   transition-duration: 1s;
 }
 
-/* STYLE FOR ALL BUTTONS */
-button {
-  font-family: "Trebuchet MS", Optima;
-  letter-spacing: 0.3vw;
-  font-size: 1.5vw;
-  font-weight: bold;
-  padding: 1.5vw;
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-}
+
 
 .popover {
 
