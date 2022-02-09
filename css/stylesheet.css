@@ -6,6 +6,42 @@ html {
   scroll-behavior: smooth;
 }
 
+.top-spacer {
+    background-color:rgba(0,0,0,.3); 
+    top:0; left:0; 
+    width:100%; 
+    height: 30px;
+position: absolute;
+}
+/**************
+ ScrollBar Styles 
+**************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,20,20,.5);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,100,100,1);
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,20,20,.5);
+}
+
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(60,150,150,1);
+        box-shadow: inset 0 0 5px rgba(0,20,20,.5);
+    }
+
 body {
   margin: 0%;
   opacity: 1;
@@ -50,16 +86,18 @@ h1:hover {
     padding-bottom: 80px;
     margin: -30px 0 0 0 ;
 }
-
+.quote{
+    padding-top: 20px;
+}
 q {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .shigeru {
     color: lightgreen;
-    font-size: 1vw;
+    font-size: 1.1vw;
     padding-bottom: 2px;
-    margin-top: -15px;
+    margin-top: -20px;
     font-family: "Georgia", Optima, sans-serif;
 }
 
@@ -80,8 +118,8 @@ q {
     font-size: 1.5vw;
     font-family: "Georgia", Optima, sans-serif;
 /*    background: rgba(168, 241, 241, 0.03);
-*/    padding: 0;
-    bottom: 0;
+*/    
+    bottom: 0px;
 } 
 
 .badges {
@@ -168,8 +206,8 @@ NAVBAR STYLES
   top: 0;
   width: 100%;
   z-index: 1;
-  -webkit-animation: moveNav 1.5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
-  animation: moveNav 1.5s; /* This applies the moveNav animation for all other browsers */
+  -webkit-animation: moveNav 1s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+  animation: moveNav 1s; /* This applies the moveNav animation for all other browsers */
   border-radius: 0 0 0 25%;
 }
 @keyframes moveNav {
@@ -223,16 +261,24 @@ NAVBAR STYLES
   font-weight: bold;
 }
 
-    .Navbar a.active:hover {
-        background-color: rgba(0, 100, 100, .96);
-    }
+.Navbar a.active:hover {
+    background-color: rgba(0, 100, 100, .96);
+}
 /**************
 END NAVBAR STYLES
 
 **************/
-.dropdown {
+.dropdown1 {
     -webkit-animation: moveNavText 2s;
     animation: moveNavText 2s;
+    z-index: 3;
+    display: block; 
+    float: right; 
+    position: fixed; 
+    padding: 7px 5px; 
+    right:4px; 
+    top:6px;
+    font-size: 1.2vw;
 }
 @keyframes moveQuick {
     from {
@@ -266,8 +312,8 @@ END NAVBAR STYLES
   color: white;
   width: 100%;
   max-width: 100%;
-  height: 90vh;
-  top: 0px;
+  height: 80vh;
+  top: -20px;
   padding: 5px 5px 0px 5px;
   position: relative;
   -webkit-animation: moveVideoText 1.5s;
@@ -280,7 +326,7 @@ END NAVBAR STYLES
     top: -800px;
   }
   to {
-    top: 0px;
+    top: -20px;
   }
 }
 
@@ -640,7 +686,11 @@ form {
   transition-duration: 1s;
 }
 
-
+.list{
+    text-align: center;
+    list-style: none;
+    font-size: 1.5vw;
+}
 
 .popover {
 

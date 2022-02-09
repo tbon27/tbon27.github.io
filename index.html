@@ -27,6 +27,8 @@
         console.log("fadeout removed");
     </script>
 
+ 
+
     <!-- NAV BAR -->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
@@ -34,12 +36,13 @@
         <a href="./unity.html">Unity Projects</a>
         <a href="#About">About</a>
         <!--<a href="#GitHub">GitHub</a>-->
-
         <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
+
     </div>
 
-    <div class="dropdown" style="z-index: 11; display: block; float: right; position: fixed; padding: 7px 5px;; right: 0;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="z-index:11;">
+    <!--DropDown and linked in button-->
+    <div>
+        <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Navigate on this page
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
@@ -48,7 +51,11 @@
             <a class="dropdown-item" href="#Github">GitHub</a>
             <a class="dropdown-item" href="#Unity">Unity</a>
         </div>
+
+        <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'"
+               value='LinkedIn' class="btn btn-primary dropdown1" style="right:220px; ">
     </div>
+  
 
 
     <!-- END NAV BAR -->
@@ -68,15 +75,15 @@
         <div>
             <h1 class="white-text" id="title1">Tony Bongiovanni's Portfolio</h1>
         </div>
-        <p class="center">
+        <p class="center quote">
             <q>
                 Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
             </q>
         </p>
-        <br>
         <p class="shigeru center">-Shigeru Miyamoto</p>
         <div class="smiley center">&#9787;</div>
         <br>
+
         <p class="center bio">
             <span>
                 Hello! My name is Tony B. Welcome to my portfolio website!<br>This page is intended to tell you about my background and experience.
@@ -223,7 +230,6 @@
           </div>
       </div> -->
     <!-- END CONTACT SECTION-->
-
     <!-- UNITY SECTION -->
     <div class="Row" id="Unity">
         <!--Left Column-->
@@ -233,18 +239,24 @@
         <!--Right column-->
         <div class="Column_1">
             <h1>Unity Engine</h1>
-            <p>
-                I have experience producing small 2D and 3D games with Unity Engine.
-                <br>
+            <p style="text-align:center">
+                I also have experience producing small 2D and 3D games with Unity Engine.
             </p>
-            <p>
-                more words here
+            <p style="text-align:center">
+                Peripheral programs I have worked with on these projects include, but are not limited to:
             </p>
-            <ul>
-                <li>GIMP</li>
-                <li>Blender</li>
-                <li>Ableton Live</li>
-            </ul>
+            <div>
+                <ul class="list">
+                    <li>Blender</li>
+                    <li>GIMP</li>
+                    <li>Ableton Live</li>
+                </ul>
+            </div>
+
+            <p style="text-align:center">
+                Feel free to explore my projects further!<br />
+                <a href="./unity.html">Tony's Unity Projects</a>
+            </p>
         </div>
     </div>
 
@@ -327,7 +339,7 @@
             }
         }
 
-                       //The following has been moved to main.js
+                           //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
