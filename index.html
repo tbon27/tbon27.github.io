@@ -27,10 +27,10 @@
         console.log("fadeout removed");
     </script>
 
- 
+
 
     <!-- NAV BAR -->
-    <div class="Navbar">
+    <div class="Navbar" id="navbar">
         <a class="active" href="#Home">Home</a>
         <!--<a href="#Slideshow">Slideshow</a>-->
         <a href="./unity.html">Unity Projects</a>
@@ -68,7 +68,7 @@
     </div>
     <!-- END BG VIDEO-->
     <!-- VIDEO OVERLAY TEXT -->
-    <div class="Video_Text">
+    <div class="Video_Text" id="top">
         <div>
             <h1 class="white-text" id="title1">Tony Bongiovanni's Portfolio</h1>
         </div>
@@ -197,7 +197,7 @@
         <!--Right column-->
         <div class="Column_2">
             <a href="https://github.com/tbon27" target="_blank">
-                <img src="images/GitHub.png" alt="GitHub Logo">
+                <img src="images/GitHub2.png" alt="GitHub Logo">
             </a>
         </div>
     </div>
@@ -275,8 +275,10 @@
             <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
         </form>
     </div>
-
     <!-- END POP UP CONTACT -->
+    <!-- Back To Top -->
+    <a href="#top" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:.8vw; opacity: .8; font-weight: 500;"> &#129093; Back to Top</a>
+    <!--End Back to top -->
     <!--FOOTER SECTION-->
     <footer>
         <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
@@ -336,7 +338,7 @@
             }
         }
 
-                           //The following has been moved to main.js
+                                   //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";

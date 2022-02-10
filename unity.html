@@ -40,21 +40,22 @@
     </div>
 
     <input type=button onClick="location.href='https://play.unity.com/mg/other/webgl-builds-70441'"
-           value='Play Asteroid Pool!' class="btn btn-warning dropdown1" style="right:220px; ">
+           value='Play Asteroid Pool!' class="btn btn-warning dropdown1" target="_blank" style="right:370px; ">
 
-    <!--<input type=button onclick="window.open(this.getAttribute('data-href'))" data-href="https://play.unity.com/mg/other/webgl-builds-70441" return false;" class="btn btn-warning dropdown1" style="right:220px;">View Project-->
+    <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'" target="_blank"
+           value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right:220px; ">
 
+    <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Navigate on this page
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
+        <a class="dropdown-item" href="#AsteroidPool">Asteroid Pool</a>
+        <a class="dropdown-item" href="#SpaceShooter">Space Shooter 2</a>
+        <a class="dropdown-item" href="#BongysCreations">Bongy's Creations</a>
 
-    <div class="dropdown" style="z-index: 11; display: block; float: right; position: fixed; padding: 7px 5px;; right: 0;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="z-index:11;">
-            Navigate on this page
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
-            <a class="dropdown-item" href="#AsteroidPool">Asteroid Pool</a>
-            <a class="dropdown-item" href="#SpaceShooter">Space Shooter 2</a>
-
-        </div>
     </div>
+
+
     <!-- END NAV BAR -->
     <br>
     <br>
@@ -78,7 +79,7 @@
                 A life-long bond with video games finally reached new levels since my introduction to the Unity Engine.<br />
                 Building upon various creative projects over the years my skillset has broadened.<br />
                 From Music, to Animation, to Programming, to 3D Modeling, to Creative Writing...<br />
-                eventually resulting in the combination of all areas of interests and skills: 
+                eventually resulting in the combination of all areas of interests and skills:
                 <a href="https://unity.com/">The Unity Game Engine</a><br /><br />
                 My Unity development focuses on creating Games and practical Real World Applications <br />
                 with hopes that his products ultimately support positivity, inclusiveness, growth, and FUN!<br />
@@ -86,10 +87,10 @@
                 Thank you for stopping by and enjoy!
             </span>
         <p style="text-align: center;">Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me for collaborations on your projects!</p>
-        </p>
+
     </div>
 
-    <!-- ABOUT SECTION-->
+    <!-- ASTEROID POOL SECTION-->
     <div class="Row" id="AsteroidPool">
         <!--Left Column-->
         <div class="Column_2" style="height: 60vh;">
@@ -131,8 +132,8 @@
             </div>
         </div>
     </div>
-    <!-- END ABOUT SECTION-->
-    <!-- GITHUB SECTION -->
+    <!-- END ASTEROID POOL SECTION-->
+    <!-- SPACESHOOTER SECTION -->
     <div class="Row" id="SpaceShooter">
         <!--Left column-->
         <div class="Column_1" style="height: 60vh;">
@@ -141,7 +142,7 @@
             <h1>Space Shooter 2</h1>
             <p style="text-align: center;">
                 This retro-style project was inspired by the Udemy course<br />
-                entitled "Unity 2D and 3D Games From Scratch and learn C# Scripting" by Raja Haris.
+                entitled <a href="https://www.udemy.com/share/103n7C3@1O8py6vAzUrN8RUU8hbyUK4Z7tqeC2t_Ml9sRqvYqzR0QcuQg8Mk269A6DRlgLWt/" target="_blank">"Unity 2D and 3D Games From Scratch and learn C# Scripting"</a> by Raja Haris.
             </p>
 
 
@@ -162,9 +163,71 @@
             </div>
         </div>
     </div>
-    <!-- END GITHUB SECTION -->
-    <!-- POP UP CONTACT -->
+    <!-- END SPACESHOOTER SECTION -->
+    <!-- Tech SECTION-->
+    <div class="Row" id="Technologies">
+        <!--Left Column-->
+        <div class="Column_2" style="height: 60vh;">
+            <img style="margin: 0 0 10px;" src="./images/blender1.png" />
+            <img style="margin: 0 0 10px;" src="./images/gimp1.png" />
+            <img style="margin: 0 0 10px;" src="./images/ableton1.png" />
+        </div>
 
+
+        <!--Right column-->
+        <div class="Column_1" style="height: 60vh;">
+            <br />
+            <h1>Technologies</h1>
+            <p style="text-align:center">
+                Bongy's Creations is a creative arts portfolio that encapsulates<br />
+                all that I have created using a variety of tools and applications. <br />
+                Bongy's Creations acts as a public showcase of my current and<br />
+                past works, but also a point of contact for collaboration<br />
+                opportunities amongst the creative community.<br /><br />
+        </div>
+    </div>
+    <!-- END Tech SECTION-->
+    <!-- bongyscreations SECTION -->
+    <div class="Row" id="BongysCreations">
+        <!--Left column-->
+        <div class="Column_1" style="height: 60vh;">
+            <br />
+            <h1>Bongy's Creations</h1>
+            <p style="text-align:center">
+                Bongy's Creations is a creative arts portfolio that encapsulates<br />
+                all that I have created using a variety of tools and applications. <br />
+                Bongy's Creations acts as a public showcase of my current and<br />
+                past works, but also a point of contact for collaboration<br />
+                opportunities amongst the creative community.<br /><br />   
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2" style="height: 60vh;">
+            <img src="./images/logo5alt.png" style="width: 28vw;" />
+            <br />
+            <div class="center">
+                <div style="display:inline-block;">
+                    <img src="./images/TwitterLogo.png" style="width: 5vw; box-shadow: none; " />
+
+                    <input type=button onClick="location.href='https://www.twitter.com/bongyscreations'" value='Bongy&rsquo;s Creations on Twitter' class="btn btn-primary" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                </div>
+                <div style="display:inline-block;">
+                    <img src="./images/InstagramLogo.png" style="width: 5vw; box-shadow: none;" />
+
+                    <input type=button onClick="location.href='https://www.instagram.com/bongyscreations'" value='Bongy&rsquo;s Creations on Instagram' class="btn btn-info" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                </div>
+                <div style="display:inline-block;">
+                    <img src="./images/YoutubeLogo.png" style="width: 5vw; box-shadow: none;" />
+
+                    <input type=button onClick="location.href='https://www.youtube.com/channel/UCqANQ4d6SbCgcxSdsTG59Cg'" value='Bongy&rsquo;s Creations on YouTube' class="btn btn-danger" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END bongyscreations SECTION -->
+
+
+    <!-- POP UP CONTACT -->
     <button class="open-button btn" onclick="openForm()">CONTACT</button>
     <div class="form-popup" id="myForm" ondblclick="closeForm()">
         <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
@@ -182,6 +245,9 @@
     </div>
 
     <!-- END POP UP CONTACT -->
+    <!-- Back To Top -->
+    <a href="#top" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:.8vw; opacity: .8;">Back to Top</a>
+    <!--End Back to top -->
     <!--FOOTER SECTION-->
     <footer>
         <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
@@ -241,7 +307,7 @@
             }
         }
 
-                                                   //The following has been moved to main.js
+                          //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
