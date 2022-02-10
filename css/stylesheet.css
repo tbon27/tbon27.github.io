@@ -280,15 +280,6 @@ END NAVBAR STYLES
     top:6px;
     font-size: 1.2vw;
 }
-/*@keyframes moveQuick {
-    from {
-        top: -100vw;
-    }
-
-    to {
-        top: 0vw;
-    }
-}*/
 @keyframes moveQuick {
     from {
         top: -300px;
@@ -298,6 +289,27 @@ END NAVBAR STYLES
         top:6px;
     }
 }
+.dropdown2 {
+    -webkit-animation: moveQuick2 2.4s;
+    animation: moveQuick2 2.4s;
+    z-index: 3;
+    display: block; 
+    float: right; 
+    position: fixed; 
+    right:4px; 
+    top:2.4px;
+    font-size: 1.2vw;
+}
+@keyframes moveQuick2 {
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 2.4px;
+    }
+}
+
     /**************
    VIDEO STYLES
 **************/
