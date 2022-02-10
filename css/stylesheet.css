@@ -297,7 +297,7 @@ END NAVBAR STYLES
     float: right; 
     position: fixed; 
     right:4px; 
-    top:2.4px;
+    top:13px;
     font-size: 1.2vw;
 }
 @keyframes moveQuick2 {
@@ -306,7 +306,7 @@ END NAVBAR STYLES
     }
 
     to {
-        top: 2.4px;
+        top:13px;
     }
 }
 
