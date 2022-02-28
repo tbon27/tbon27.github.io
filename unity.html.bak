@@ -32,7 +32,7 @@
         <a href="./index.html">Home</a>
         <!--<a href="#Slideshow">Slideshow</a>-->
         <a class="active" href="#Unity">Unity Projects</a>
-        <!-- <a href="#About">About</a> -->
+        <a href="#About">About</a>
         <!--<a href="#GitHub">GitHub</a>-->
 
         <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
