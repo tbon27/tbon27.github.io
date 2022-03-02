@@ -69,7 +69,7 @@ h1 {
 
 h1:hover {
   filter: grayscale(5%);
-  transform: scale(1.05);
+/*  transform: scale(1.05);*/
 }
 
 #title1 {
@@ -86,8 +86,9 @@ h1:hover {
     padding-bottom: 80px;
     margin: -30px 0 0 0 ;
 }
-.quote{
+.quote {
     padding-top: 20px;
+    font-family: "Georgia", Optima, sans-serif;
 }
 q {
     font-size: 1.2vw;
@@ -97,8 +98,12 @@ q {
     color: lightgreen;
     font-size: 1.1vw;
     padding-bottom: 2px;
-    margin-top: -20px;
     font-family: "Georgia", Optima, sans-serif;
+}
+
+.quote:hover {
+    transform: scale(1.04);
+    transition: transform 1s;
 }
 
 .smiley{
@@ -117,14 +122,13 @@ q {
 .bio{
     font-size: 1.5vw;
     font-family: "Georgia", Optima, sans-serif;
-/*    background: rgba(168, 241, 241, 0.03);
-*/    
+/*    background: rgba(168, 241, 241, 0.03);*/    
     bottom: 0px;
 } 
 
 .badges {
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   font-size: 1.75vw;
 }
 
@@ -138,8 +142,8 @@ p {
 }
 
 p:hover {
-  transform: scale(1.04);
-  transition: transform 1s;
+/*  transform: scale(1.04);*/
+/*  transition: transform 1s;*/
 }
 
 .center {
@@ -147,8 +151,8 @@ p:hover {
 }
 
 .center:hover {
-  transition: transform 0.2s;
-  transform: scale(1.05);
+ /* transition: transform 0.2s;*/
+/*  transform: scale(1.05);*/
 }
 
 a {
@@ -161,36 +165,66 @@ q {
   font-style: italic;
 }
 
-img {
-  filter: grayscale(15%);
-  border-radius: 25%;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 5px 10px rgba(255,255,255,.3);
+.think-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform .5s ease;
 }
 
-img:hover {
-  filter: grayscale(2.5%);
-  /* transition: transform 1s; */
-  /* transform: scale(1.05); */
+.think-icon:hover{
+     transform: scale(1.25); 
+ }
+
+.content-img {
+  filter: grayscale(10%);
+  border-radius: 25%;
+  max-width: 85%;
+  max-height: 85%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  box-shadow: 3px 15px rgba(255,255,255,.3);
+}
+
+.github-img {
+    filter: grayscale(45%);
+    transition: transform .5s ease-in-out;
+}
+.github-img:hover {
+    filter: grayscale(5%);
+    transform: scale(1.15);
+}
+
+.content-img:hover {
+    filter: grayscale(15%);
+    /* transition: transform 1s; */
+    /* transform: scale(1.05); */
+}
+
+.BC-img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
-  img {
-    height: 150px;
-    margin-top: 150px;
-  }
+    .content-img {
+        height: 150px;
+        margin-top: 150px;
+    }
 }
-
 
 footer {
   padding: 1%;
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+._footer {
+    margin-bottom: 1px;
 }
 /**************
 END GENERAL STYLES
@@ -234,6 +268,10 @@ NAVBAR STYLES
     border-radius: 0 0 25% 25%;
 }
 
+.nav-link{
+    text-decoration: none ;
+}
+
 @keyframes moveNavText {
   from {
     top: -100vw;
@@ -251,16 +289,17 @@ NAVBAR STYLES
 }
 
 .Navbar a:hover {
-    background-color: rgba(0, 100, 100, .96);
+    background-color: rgba(70, 142, 142,.97);
     color: black;
-    font-weight: bold;
+    /*    font-weight: bold;
+*/
 }
 /* Navbar home button */
 .Navbar a.active {
   /* This targets the a element on the navbar with the "active" class */
   background-color: rgb(0,56, 56);
-  font-weight: bold;
-}
+/*  font-weight: bold;
+*/}
 
 .Navbar a.active:hover {
     background-color: rgba(0, 100, 100, .96);
@@ -310,7 +349,7 @@ END NAVBAR STYLES
     }
 }
 
-    /**************
+/**************
    VIDEO STYLES
 **************/
 
@@ -419,12 +458,7 @@ END NAVBAR STYLES
 /* Hover effect on slide show buttons */
 .Previous:hover,
 .Next:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.4
-  ); /* background of the arrows transparent gray */
+  background-color: rgba(0, 0, 0, 0.4); /* background of the arrows transparent gray */
   color: white; /*white arrows when hovered over */
 }
 
@@ -581,12 +615,12 @@ input[type="text"] {
 }
 
 /* Hover effects for input boxes */
-input[type="text"]:hover {
+/*input[type="text"]:hover {
   box-shadow: 0 0 5px #4d0000 inset;
-}
+}*/
 
 /* Submit button */
-input[type="submit"] {
+/*input[type="submit"] {
   background-color: black;
   color: white;
   font-weight: bold;
@@ -600,7 +634,7 @@ input[type="submit"] {
   font-family: Perpetua, Rockwell Extra Bold;
 }
 
-button cancel {
+ .cancel {
     font-family: "Trebuchet MS", Optima;
     letter-spacing: 0.3vw;
     font-size: 1.5vw;
@@ -609,15 +643,15 @@ button cancel {
     cursor: pointer;
     width: 100%;
     height: auto;
-}
+}*/
 
 
 /* Hover effect for submit button */
 input[type="submit"]:hover {
-  background-color: #8fffd6;
-  color: black;
-  transform: scale(1.01);
-  transition: transform 1s;
+    background-color: #69B4B4;
+    color: black;
+    transform: scale(1.01);
+    transition: transform 1s;
 }
 
 /* Form */
@@ -689,9 +723,9 @@ form {
 
 /* form container styles */
 .form-container {
-  max-width: 40vw;
-  padding: 1vw;
-  background-color: white;
+    max-width: 40vw;
+    padding: 1vw;
+    background-color: rgb(206, 206, 206);
 }
 
 /* input fields set to full width */
@@ -705,32 +739,36 @@ form {
 }
 
 /* focus on inputs, do something */
-.form-container input[type="text"]:focus,
-.form-container input[type="password"]:focus {
-  background-color: rgb(235, 235, 235);
-  outline: none;
-}
+    .form-container input[type="text"]:focus,
+    .form-container input[type="password"]:focus {
+        background-color: rgba(198, 255, 255, .25);
+        outline: 3px solid rgba(0, 95, 90, .75);
+    }
 
 /* style for the submit button */
 .form-container .btn {
-  background-color: #04aa6d;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
+    background-color: rgb(0, 95, 90);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
 
 .form-container .cancel {
-  background-color: maroon;
-  font-family: Perpetua, Rockwell Extra Bold;
-  font-weight: bold;
-  font-size: 16px;
+    background-color: rgb(131, 0, 7);
+    font-family: Perpetua, Rockwell Extra Bold;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-.form-container .cancel:hover {color:rgba(255,255,255,.97);}
+.form-container .cancel:hover {
+    background-color: rgb(211, 0, 11);
+    transform: scale(1.01);
+    transition: transform 1s;
+}
 
 .form-container .btn:hover,
 .open-button:hover {
@@ -739,6 +777,8 @@ form {
 }
 
 .list{
+    margin: 0 0 0 -45px;
+    display: block;
     text-align: center;
     list-style: none;
     font-size: 1.5vw;

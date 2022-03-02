@@ -27,36 +27,35 @@
         console.log("fadeout removed");
     </script>
 
+
     <!-- NAV BAR -->
-    <div class="Navbar">
-        <a href="./index.html">Home</a>
+    <div class="Navbar" id="navbar">
+        <a class="nav-link" href="./index.html">Home</a>
         <!--<a href="#Slideshow">Slideshow</a>-->
-        <a class="active" href="#Unity">Unity Projects</a>
+        <a class="active nav-link" href="./unity.html">Unity Projects</a>
         <!-- <a href="#About">About</a> -->
         <!--<a href="#GitHub">GitHub</a>-->
-
-        <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
-
+        <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
 
     <div style="display: inline-block;">
-    <input type=button onClick="location.href='https://play.unity.com/mg/other/webgl-builds-70441'"
-           value='Play Asteroid Pool!' class="btn btn-warning dropdown1" target="_blank" style="z-index: 11; right: 408px; width: 170px; font-size: 17px">
+        <input type=button onClick="location.href='https://play.unity.com/mg/other/webgl-builds-70441'"
+               value='Play Asteroid Pool!' class="btn btn-warning dropdown1" target="_blank" style="z-index: 11; right: 408px; width: 170px; font-size: 17px">
 
-    <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'" target="_blank"
-           value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;">
-    <!--<img src="./images/LinkedInLogo.png" width: 30px; height: 10px; alt="" class="btn-primary dropdown2" style="z-index: 13; display: block; float: right; box-shadow: none; right: 226px; background-color: none;" />-->
+        <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'" target="_blank"
+               value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;">
+        <!--<img src="./images/LinkedInLogo.png" width: 30px; height: 10px; alt="" class="btn-primary dropdown2" style="z-index: 13; display: block; float: right; box-shadow: none; right: 226px; background-color: none;" />-->
 
-    <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Navigate on this page
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
-        <a class="dropdown-item" href="#AsteroidPool">Asteroid Pool</a>
-        <a class="dropdown-item" href="#SpaceShooter">Space Shooter 2</a>
-        <a class="dropdown-item" href="#Technologies">Technologies</a>
-        <a class="dropdown-item" href="#BongysCreations">Bongy's Creations</a>
+        <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Navigate on this page
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
+            <a class="dropdown-item" href="#AsteroidPool">Asteroid Pool</a>
+            <a class="dropdown-item" href="#SpaceShooter">Space Shooter 2</a>
+            <a class="dropdown-item" href="#Technologies">Technologies</a>
+            <a class="dropdown-item" href="#BongysCreations">Bongy's Creations</a>
 
-    </div>
+        </div>
 
     </div>
     <!-- END NAV BAR -->
@@ -168,9 +167,9 @@
     <div class="Row" id="Technologies">
         <!--Left Column-->
         <div class="Column_2" style="height: 60vh;">
-            <img style="margin: 0 12px 55px 10vw; width: 26vw; text-align:center;" src="./images/blender1.png" />
-            <img style="margin: 0 12px 55px 10vw; width: 26vw; " src="./images/ableton1.png" />
-            <img style="margin: 0 12px 55px 10vw; width: 26vw; " src="./images/gimp1.png" />
+            <img style="margin: 10px 12px 55px 10vw; width: 26vw; text-align:center;" src="./images/blender1.png" />
+            <img style="margin: 10px 12px 55px 10vw; width: 26vw; " src="./images/ableton1.png" />
+            <img style="margin: 10px 12px 55px 10vw; width: 26vw; " src="./images/gimp1.png" />
         </div>
 
 
@@ -207,7 +206,7 @@
         </div>
         <!--Right column-->
         <div class="Column_2" style="height: 60vh;">
-            <img src="./images/logo5alt.png" style="width: 28vw;" />
+            <img class="BC-img" src="./images/logo5alt.png" style="width: 28vw;" />
             <br />
             <div class="center">
                 <div style="display:inline-block;">
@@ -252,7 +251,7 @@
     <!--End Back to top -->
     <!--FOOTER SECTION-->
     <footer>
-        <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
+        <p class="center _footer">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
     </footer>
     <!-- END FOOTER SECTION-->
     <!----------------
@@ -309,7 +308,7 @@
             }
         }
 
-                              //The following has been moved to main.js
+                                  //The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";

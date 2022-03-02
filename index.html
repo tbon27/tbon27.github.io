@@ -7,8 +7,6 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
 </head>
 
 <body>
@@ -31,13 +29,12 @@
 
     <!-- NAV BAR -->
     <div class="Navbar" id="navbar">
-        <a class="active" href="#Home">Home</a>
+        <a class="active nav-link" href="#Home">Home</a>
         <!--<a href="#Slideshow">Slideshow</a>-->
-        <a href="./unity.html">Unity Projects</a>
+        <a class="nav-link" href="./unity.html">Unity Projects</a>
         <!-- <a href="#About">About</a> -->
         <!--<a href="#GitHub">GitHub</a>-->
-        <a href="#Contact" onclick="openForm()" class="contact" ondblclick="closeForm()">Contact</a>
-      
+        <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
 
     <!--DropDown and linked in button-->
@@ -53,7 +50,7 @@
         </div>
 
         <div>
-            <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'" target="_blank"
+            <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'"
                    value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;">
             <!--<img src="./images/LinkedInLogo.png" alt="" class="btn-primary dropdown2" style="width: 1.65vw; z-index: 13; display: block; float: right; box-shadow: none; right: 226px; background-color: none;" />-->
         </div>
@@ -76,13 +73,14 @@
         <div>
             <h1 class="white-text" id="title1">Tony Bongiovanni's Portfolio</h1>
         </div>
-        <p class="center quote">
+        <div class="center quote">
             <q>
                 Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
             </q>
-        </p>
-        <p class="shigeru center">-Shigeru Miyamoto</p>
-        <div class="smiley center">&#9787;</div>
+            <p class="shigeru center">-Shigeru Miyamoto</p>
+        </div>
+        <img class="think-icon" src="images/Thinking-Icon.png" alt="thinking icon" style="width: 3.5vw;" />
+        <!--<div class="smiley center">&#9787;</div>-->
         <br>
 
         <p class="center bio">
@@ -150,7 +148,7 @@
     <div class="Row" id="About">
         <!--Left Column-->
         <div class="Column_2">
-            <img src="images/image_1.png" alt="image_1" />
+            <img class="content-img" src="images/image_1.png" alt="image_1" />
         </div>
         <!--Right column-->
         <div class="Column_1">
@@ -201,8 +199,8 @@
         </div>
         <!--Right column-->
         <div class="Column_2">
-            <a href="https://github.com/tbon27" target="_blank">
-                <img src="images/GitHub2.png" alt="GitHub Logo">
+            <a href="https://github.com/tbon27" target="">
+                <img class="content-img github-img" src="images/GitHub2.png" alt="GitHub Logo">
             </a>
         </div>
     </div>
@@ -236,7 +234,7 @@
     <div class="Row" id="Unity">
         <!--Left Column-->
         <div class="Column_2">
-            <img src="images/unityImage2.png" alt="image_1" />
+            <img class="content-img" src="images/unityImage2.png" alt="image_1" />
         </div>
         <!--Right column-->
         <div class="Column_1">
@@ -247,13 +245,13 @@
             <p style="text-align:center">
                 Peripheral programs I have worked with on these projects include, but are not limited to:
             </p>
-            <div>
-                <ul class="list">
+     
+                <ul class="center list">
                     <li>Blender</li>
                     <li>GIMP</li>
                     <li>Ableton Live</li>
                 </ul>
-            </div>
+         
             <br />
             <p style="text-align:center">
                 Feel free to explore my projects:<br />
@@ -286,7 +284,7 @@
     <!--End Back to top -->
     <!--FOOTER SECTION-->
     <footer>
-        <p class="center">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
+        <p class="center _footer">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
     </footer>
     <!-- END FOOTER SECTION-->
     <!----------------
@@ -343,7 +341,16 @@
             }
         }
 
-                                   //The following has been moved to main.js
+        function externalLinks() {
+            for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++)
+            {
+                var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+            }
+        };
+        externalLinks();
+
+
+//The following has been moved to main.js
         /*
         function openForm() {
           document.getElementById("myForm").style.display = "block";
