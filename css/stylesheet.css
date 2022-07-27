@@ -125,10 +125,10 @@ q {
   font-size: 15px;
 }
 
-.bio{
-    font-size: 16px;
+#bio{
+    font-size: 2.5vh;
     font-family: "Georgia", Optima, sans-serif;
-    padding: 10px 20% 10px 20%;
+    padding: 10px 10vw 10px 10vw;
     margin: 0;
   }
 
@@ -616,7 +616,6 @@ this section covers the styling of the columns and rows within the table
 ****************/
 input[type="text"] {
   width: 100%;
-  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
@@ -628,9 +627,9 @@ input[type="text"] {
 }
 
 /* Hover effects for input boxes */
-/*input[type="text"]:hover {
-  box-shadow: 0 0 5px #4d0000 inset;
-}*/
+input[type="text"]:hover {
+  box-shadow: 0 0 5px #69B4B4 inset;
+}
 
 /* Submit button */
 /*input[type="submit"] {
@@ -667,16 +666,20 @@ input[type="submit"]:hover {
     transition: transform 1s;
 }
 
+
 /* Form */
 form {
   border-radius: 2px;
   background-color: #a8cdcd;
   box-shadow: 0 0 10px #008181 inset;
-  padding: 10px;
+  padding: 5px;
   font-family: "Trebuchet MS", Optima;
   z-index: 10;
 }
 
+label{
+  padding: 2px 6px;
+}
 /***********************
     POP UP CONTACT FORM STYLES
 ************************/
@@ -714,6 +717,12 @@ form {
     animation: moveContactButton 2.5s;
     text-align:center;
 }
+@media screen and (max-width: 576px) {
+  .backToTop {
+    visibility: hidden;
+  }
+}
+
 @keyframes moveContactButton {
     from {
         bottom: -100px;
@@ -752,7 +761,7 @@ form {
 .form-container input[type="text"] {
   width: 100%;
   padding: 0.93vw;
-  margin: 0.6vw 0 0.6vw 0;
+  margin: 0 0 0.6vw 0;
   border: none;
   background: #f1f1f1;
   font-size: 15px;
@@ -767,7 +776,6 @@ form {
 
 #form-buttons {
   text-align: center;
-  margin: 5px 0;
   width: 100%;
 }
 
