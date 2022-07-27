@@ -48,7 +48,7 @@ body {
   opacity: 1;
   transition: 3s opacity;
   letter-spacing: 0.2vw; /*vw is a relative measurement, 1vw is equal to 1% of the viewport width */
-  font-size: 16px;
+  font-size: 2.25vh;
   overflow-x: hidden;
   user-select: none; /*prevents the text on the webpage from being highlighted by user */
 }
@@ -62,11 +62,14 @@ h1 {
   text-transform: uppercase;
   font-family: "Georgia", Optima, sans-serif;
   text-align: center;
-
   margin-top: 2%;
   padding-bottom: 10px;
   color: #1a1a1a;
   transition: transform 1s;
+}
+
+.headings{
+  font-size: 4.25vh;
 }
 
 h1:hover {
@@ -139,7 +142,7 @@ p {
   font-family: Perpetua, Rockwell Extra Bold;
   text-align: justify;
   letter-spacing: 0.1vw;
-  font-size: 16px;
+  font-size: 2.5vh;
   padding-left: 1vw;
   padding-right: 1vw;
 }
@@ -176,7 +179,7 @@ q {
   max-width: 85%;
   max-height: 85%;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   padding-top: 40px;
   box-shadow: 3px 15px rgba(255,255,255,.3);
 }
@@ -200,16 +203,18 @@ q {
     display: block;
     width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding-top: 10px;
 }
 
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
 @media screen and (max-width: 576px) {
-    .content-img {
-        height: 150px;
-        margin-top: 150px;
-    }
+  .content-img {
+      height: 200px;
+      width: 200px;
+  }
+  
 }
+
 
 footer {
   padding: 1%;
@@ -284,7 +289,7 @@ NAVBAR STYLES
   }
 
   #jumpto-dropdown .dropdown1{
-    top:50px;
+    display: none;
   }
 }
 
