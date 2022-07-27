@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tony Bongiovanni</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-small.png"/>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,26 +29,32 @@
         console.log("fadeout removed");
     </script>
 
+ <!-- NAV BAR -->
+ <div class="Navbar" id="navbar">
+    <a class="nav-link" href="./index.html">Home</a>
 
-    <!-- NAV BAR -->
-    <div class="Navbar" id="navbar">
-        <a class="nav-link" href="./index.html">Home</a>
-        <!--<a href="#Slideshow">Slideshow</a>-->
-        <a class="active nav-link" href="./unity.html">Unity Projects</a>
-        <!-- <a href="#About">About</a> -->
-        <!--<a href="#GitHub">GitHub</a>-->
-        <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
-    </div>
+    <!--<a href="#Slideshow">Slideshow</a>-->
+   <a class="active nav-link" href="./unity.html">Unity Projects</a>       
+   <a class="nav-link" href="https://docs.google.com/document/d/1CG8Qx5-ADk71Caayq0fN6fKxP22yWYirAWzcBJIwQ0Q/edit?usp=sharing"  target="_blank">Resume</a>       
+   <a class="nav-link" href="https://www.linkedin.com/in/tony-bongiovanni/" target="_blank">LinkedIn</a>
 
-    <div style="display: inline-block;">
+
+    <!-- <a href="">Resume</a>
+    <a href="https://www.linkedin.com/in/tony-bongiovanni/">LinkedIn</a> -->
+    <!--<a href="#GitHub">GitHub</a>-->
+ <!--   <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>-->
+</div>
+
+
+    <!-- <div style="display: inline-block;">
         <input type=button onClick="location.href='https://play.unity.com/mg/other/webgl-builds-70441'"
                value='Play Asteroid Pool!' class="btn btn-warning dropdown1" target="_blank" style="z-index: 11; right: 408px; width: 170px; font-size: 17px">
 
         <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'" target="_blank"
-               value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;">
+               value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;"> -->
 
         <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Navigate on this page
+            Jump to
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
             <a class="dropdown-item" href="#BongysCreations">Bongy's Creations</a>
@@ -56,8 +64,7 @@
         </div>
     </div>
     <!-- END NAV BAR -->
-    <br>
-    <br>
+
     <!-- BG VIDEO-->
     <div id="Home">
         <video autoplay muted loop id="Heading-Video">
@@ -72,21 +79,27 @@
         <div>
             <h1 class="white-text" id="title1">Projects in Unity Engine</h1>
         </div>
-        <p class="center">
+        <div class="center">
             <span class="bio">
-                <br />
-                A life-long bond with video games finally reached new levels since my introduction to the Unity Engine.<br />
-                Building upon various creative projects over the years my skillset has broadened.<br />
-                From Music, to Animation, to Programming, to 3D Modeling, to Creative Writing...<br />
-                eventually resulting in the combination of all areas of interests and skills:
-                <a href="https://unity.com/">The Unity Game Engine</a><br /><br />
-                My Unity development focuses on creating Games and practical Real World Applications <br />
-                with hopes that his products ultimately support positivity, inclusiveness, growth, and FUN!<br />
-                <br>
-                Thank you for stopping by and enjoy!
-            </span>
-        <p style="text-align: center;">Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me for collaborations on your projects!</p>
+                <p class="center";>
+                    A life-long bond with video games finally reached new levels since my introduction to the Unity Engine.
+                </p>
+                <p class="center";>
+                    Building upon various creative projects over the years my skillset has broadened.
+                    From Music, to Animation, to Programming, to 3D Modeling, to Creative Writing...
+                    eventually resulting in the combination of all areas of interests and skills:                 <a href="https://unity.com/">The Unity Game Engine</a>
+                </p>
+                <p class="center";>
+                    My Unity development focuses on creating Games and practical Real World Applications
+                    with hopes that his products ultimately support positivity, inclusiveness, growth, and FUN!
+                </p>      
+                <p class="center";>
+                    Thank you for stopping by and enjoy!
 
+                </p>      
+            </span>
+            <p style="text-align: center; font-size: 18px;">Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me for collaborations on your projects!</p>
+        </div>
     </div>
     <!-- bongyscreations SECTION -->
     <div class="Row" id="BongysCreations">
@@ -95,35 +108,34 @@
             <br />
             <h1>Bongy's Creations</h1>
             <p style="text-align:center">
-                Bongy's Creations is a creative arts portfolio that encapsulates<br />
-                all that I have created using a variety of tools and applications. <br />
-                Bongy's Creations acts as a public showcase of my current and<br />
-                past works, but also a point of contact for collaboration<br />
+                Bongy's Creations is a creative arts portfolio that encapsulates
+                all that I have created using a variety of tools and applications.
+                Bongy's Creations acts as a public showcase of my current and
+                past works, but also a point of contact for collaboration
                 opportunities amongst the creative community.
-                <br />
-                <br />
+              
                 You will find some examples of past and ongoing projects below. Feel free to reach out with any inquiries!
             </p>
         </div>
         <!--Right column-->
         <div class="Column_2" style="height: 60vh;">
-            <img class="BC-img" src="./images/logo5alt.png" style="width: 28vw;" />
+            <img class="BC-img" src="./images/logo5alt.png" style="width: 250px;" />
             <br />
             <div class="center">
-                <div style="display:inline-block;">
+                <div >
                     <img src="./images/TwitterLogo.png" style="width: 5vw; box-shadow: none; " />
 
-                    <input type=button onClick="location.href='https://www.twitter.com/bongyscreations'" value='Bongy&rsquo;s Creations on Twitter' class="btn btn-primary" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                    <input type=button onClick="location.href='https://www.twitter.com/bongyscreations'" value='Bongy&rsquo;s Creations on Twitter' class="btn btn-primary" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; margin: 6px; padding: 15px;">
                 </div>
-                <div style="display:inline-block;">
+                <div >
                     <img src="./images/InstagramLogo.png" style="width: 5vw; box-shadow: none;" />
 
-                    <input type=button onClick="location.href='https://www.instagram.com/bongyscreations'" value='Bongy&rsquo;s Creations on Instagram' class="btn btn-info" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                    <input type=button onClick="location.href='https://www.instagram.com/bongyscreations'" value='Bongy&rsquo;s Creations on Instagram' class="btn btn-info" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; margin: 6px; padding: 15px;">
                 </div>
-                <div style="display:inline-block;">
+                <div >
                     <img src="./images/YoutubeLogo.png" style="width: 5vw; box-shadow: none;" />
 
-                    <input type=button onClick="location.href='https://www.youtube.com/channel/UCqANQ4d6SbCgcxSdsTG59Cg'" value='Bongy&rsquo;s Creations on YouTube' class="btn btn-danger" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: .8vw; margin: 6px;">
+                    <input type=button onClick="location.href='https://www.youtube.com/channel/UCqANQ4d6SbCgcxSdsTG59Cg'" value='Bongy&rsquo;s Creations on YouTube' class="btn btn-danger" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; margin: 6px; padding: 15px;">
                 </div>
             </div>
         </div>
@@ -159,7 +171,7 @@
             </p>
             <div style="background-color: rgba(0,0,0,0.08); padding: 0px 5px 1px 5px;">
                 <p class="center" style="margin: -15px 0px -3px 20px; font-weight:700; font-style:oblique">Unity Staff Rating:</p>
-                <p class="center" style="margin: -5px 0px -3px 20px; font-weight:300; font-size: 1.1vw;">Jacek Mackiewicz, Content Team QA & UX </p>
+                <p class="center" style="margin: -5px 0px -3px 20px; font-weight:300; font-size: 13px;">Jacek Mackiewicz, Content Team QA & UX </p>
                 <ul class="ratings-list center" style="list-style:none; left: -500px;">
                     <li>Aesthetics: 4/5</li>
                     <li>Intuitiveness: 3/5</li>
@@ -182,7 +194,7 @@
             <p style="text-align: center;">
                 This 2D project was inspired by a lesson on mouse properties in Unity using C#, and it has evolved into a small action-fantasy game targeting a mobile release (Android), as well as PC. I expect this project to be complete by July 31, 2022; the final deadline for completion is December 31, 2022. You can follow my progress and view updates at the Itch.io page below:
                 <br />
-                <div class="center" style="padding-top:25px; font-size: 1.85vw">
+                <div class="center" style="padding-top:2px; font-size: 14px">
                 <a href="https://bongys-creations.itch.io/magicslash">Bongy's Creations on Itch.io</a>
                     </div>
             </p>
@@ -207,9 +219,9 @@
     <div class="Row" id="Technologies">
         <!--Left Column-->
         <div class="Column_2" style="height: 60vh;">
-            <img style="margin: 10px 12px 55px 10vw; width: 26vw; " src="./images/blender1.png" />
-            <img style="margin: 10px 12px 55px 10vw; width: 26vw; " src="./images/ableton1.png" />
-            <img style="margin: 10px 12px 55px 10vw; width: 26vw; " src="./images/gimp1.png" />
+            <img style="margin: 0px auto; padding: 15px; width: 100%; " src="./images/blender1.png" />
+            <img style="margin: 0px auto; padding: 15px; width: 100%;" src="./images/ableton1.png" />
+            <img style="margin: 0px auto; padding: 15px; width: 100%;" src="./images/gimp1.png" />
         </div>
 
 
@@ -221,7 +233,7 @@
                 Here are some of the technologies I have used in my Unity projects:<br />
             </p>
             <div class="center">
-                <ul style="list-style:none; font-size: 1.15vw;">
+                <ul style="list-style:none; font-size: 16px;">
                     <li><a href="https://www.blender.org/">Blender</a> - 3D Creation Suite</li>
                     <li><a href="https://www.ableton.com/en/">Ableton Live</a> - Digital Audio Workstation</li>
                     <li><a href="https://www.gimp.org/">GIMP (GNU Image Manipulation Program)</a> - Image Editor</li>
@@ -230,10 +242,13 @@
         </div>
     </div>
     <!-- END Tech SECTION-->
+
     <!-- POP UP CONTACT -->
-    <button class="open-button btn" onclick="openForm()">CONTACT</button>
+
+    <button class="open-button btn" id="contact-btn" onclick="openForm()">CONTACT</button>
+
     <div class="form-popup" id="myForm" ondblclick="closeForm()">
-        <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidatePopUpForm()" method="POST">
+        <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="ValidatePopUpForm()" method="POST">
             <label>Name:</label>
             <input type="text" name="Name:" placeholder="Enter your name here">
             <label>Email:</label>
@@ -242,14 +257,15 @@
             <input type="text" name="Phone:" id="Phone" placeholder="Enter your phone number here">
             <label>Message:</label>
             <input type="text" name="Message:" id="Message" placeholder="Enter your message here">
-            <input class="btn" type="submit" value="SUBMIT">
-            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            <div id="form-buttons">
+                <input class="btn" type="submit" value="SUBMIT">
+                <button class="btn cancel" type="button" onclick="closeForm()">CLOSE</button>
+            </div>           
         </form>
     </div>
-
     <!-- END POP UP CONTACT -->
     <!-- Back To Top -->
-    <a href="#top" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:.8vw; opacity: .8;">Back to Top</a>
+    <a href="#title-pointer" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:14px; opacity: .8; font-weight: 500;"> &#129093; Back to Top</a>
     <!--End Back to top -->
     <!--FOOTER SECTION-->
     <footer>

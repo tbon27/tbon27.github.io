@@ -1,6 +1,6 @@
-////////////////////////////////
+//--
 // Open and close contact form
-////////////////////////////////
+//--
 function openForm() {
   document.getElementById("myForm").style.display = "block";
   console.log("Button clicked");
@@ -42,9 +42,9 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block"; //displays the image in slideshow
   dots[slideIndex - 1].className += " active"; // add the active styling to the dot associated with the image
 }
-////////////////////////////////
+//--
 // END Open and close contact form
-////////////////////////////////
+//--
 
 
 

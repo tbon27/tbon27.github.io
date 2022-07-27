@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" lang="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony Bongiovanni</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-small.png"/>
+    <!-- MY CSS -->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -29,73 +32,77 @@
     <!-- NAV BAR -->
     <div class="Navbar" id="navbar">
         <a class="active nav-link" href="#Home">Home</a>
+
         <!--<a href="#Slideshow">Slideshow</a>-->
-        <a class="nav-link" href="./unity.html">Unity Projects</a>
-        <!-- <a href="#About">About</a> -->
+       <a class="nav-link" href="./unity.html">Unity Projects</a>       
+       <a class="nav-link" href="https://docs.google.com/document/d/1CG8Qx5-ADk71Caayq0fN6fKxP22yWYirAWzcBJIwQ0Q/edit?usp=sharing" target="_blank">Resume</a>       
+       <a class="nav-link" href="https://www.linkedin.com/in/tony-bongiovanni/" target="_blank">LinkedIn</a>
+
+
+        <!-- <a href="">Resume</a>
+        <a href="https://www.linkedin.com/in/tony-bongiovanni/">LinkedIn</a> -->
         <!--<a href="#GitHub">GitHub</a>-->
-        <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>
+     <!--   <a class="contact nav-link" href="#Contact" onclick="openForm()" ondblclick="closeForm()">Contact</a>-->
     </div>
+
 
     <!--DropDown and linked in button-->
     <div>
-        <input type=button onClick="location.href='https://docs.google.com/document/d/1CG8Qx5-ADk71Caayq0fN6fKxP22yWYirAWzcBJIwQ0Q/edit?usp=sharing'"
-               value='Tony&apos;s Resume' class="btn btn-success dropdown1" target="_blank" style="z-index: 11; right: 408px; width: 170px; font-size: 17px">
 
-        <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Navigate on this page
+        <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jump To
         </button>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
-            <a class="dropdown-item" href="#Slideshow">Slideshow</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index: 11;">
+            <!-- <a class="dropdown-item" href="#Slideshow">Slideshow</a> -->
             <a class="dropdown-item" href="#About">About</a>
             <a class="dropdown-item" href="#Github">GitHub</a>
             <a class="dropdown-item" href="#Unity">Unity</a>
         </div>
 
-        <div>
-            <input type=button onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'"
-                   value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" style="right: 220px;  width:170px; font-size:17px;">
-            <!--<img src="./images/LinkedInLogo.png" alt="" class="btn-primary dropdown2" style="width: 1.65vw; z-index: 13; display: block; float: right; box-shadow: none; right: 226px; background-color: none;" />-->
-        </div>
+        <!-- <div>
+            <input type="button" onClick="location.href='https://www.linkedin.com/in/tony-bongiovanni'"
+                   value='Tony&rsquo;s LinkedIn' class="btn btn-primary dropdown1" target="_blank">
+
+            <input type="button" onClick="location.href='https://docs.google.com/document/d/1CG8Qx5-ADk71Caayq0fN6fKxP22yWYirAWzcBJIwQ0Q/edit?usp=sharing'"
+            value='Tony&apos;s Resume' class="btn btn-success dropdown1" target="_blank">
+        </div> -->
 
     </div>
     <!-- END NAV BAR -->
-    <br>
-    <br>
+
     <!-- BG VIDEO-->
     <div id="Home">
         <video autoplay muted loop id="Heading-Video">
+            <!-- <source src="images/video/video_header.mp4" type="video/mp4" /> -->
             <source src="images/video/video_header.mp4" type="video/mp4" />
             <!--Display message if video fails-->
             Your browser does not support HTML5 video.
         </video>
     </div>
     <!-- END BG VIDEO-->
+
     <!-- VIDEO OVERLAY TEXT -->
     <div class="Video_Text" id="top">
-        <div>
-            <h1 class="white-text" id="title1">Tony Bongiovanni's Portfolio</h1>
+        <div id="title-pointer">
+            <h1 class="white-text" id="title1">Tony Bongiovanni</h1>
         </div>
         <div class="center quote">
             <q>
-                Our job as the game creators or developers - the programmers, artists,<br> and whatnot - is that we have to kind of put ourselves in the user&apos;s shoes.<br> We try to see what they&apos;re seeing, and then make it,<br> and support what we think they might think.
+                A good idea is something that does not solve just one problem,<br>but rather can solve multiple problems at once.
             </q>
             <p class="shigeru center">-Shigeru Miyamoto</p>
+            <img class="think-icon" src="images/Thinking-Icon.png" alt="thinking icon" style="width: 4.5vw; margin: -10px auto 0 auto;" />
         </div>
-        <img class="think-icon" src="images/Thinking-Icon.png" alt="thinking icon" style="width: 3.5vw;" />
-        <!--<div class="smiley center">&#9787;</div>-->
-        <br>
+
 
         <p class="center bio">
             <span>
-                Hello! My name is Tony B. Welcome to my portfolio website!
-                <br>This page is intended to tell you about my background, experience, and interests.
-                <br>
-                Thank you for stopping by and enjoy!
+                Welcome to my portfolio website! This page is intended to share info about my background, experience, and interests. Thank you for stopping by and enjoy!
             </span>
         </p>
     </div>
     <!-- END VIDEO OVERLAY TEXT -->
+
     <!-- SLIDESHOW SECTION -->
     <div id="Slideshow">
         <div id="Slidesow_Background">
@@ -103,32 +110,32 @@
                 <!--Slide 1/6-->
                 <div class="mySlides fade" style="display:block;">
                     <img class="Slideshow_Images" src="images/Selfie.png" alt="Picture of Tony" style="filter: grayscale(35%);">
-                    <div class="text">I would love<br />to assist you on your project!</div>
+                    <div class="text" id="slideshow-text">I would love to assist you on your project!</div>
                 </div>
                 <!--Slide 2/6-->
                 <div class="mySlides fade" style="display:none;">
                     <img class="Slideshow_Images" src="images/html-css-js.png" alt="HTML, CSS, and JS logos">
-                    <div class="text">I am a full-stack software developer,<br> trained in: HTML, CSS, JavaScript...</div>
+                    <div class="text" id="slideshow-text">I am a full-stack software developer, trained in: HTML, CSS, JavaScript...</div>
                 </div>
                 <!--Slide 3/6-->
                 <div class="mySlides fade" style="display:none;">
                     <img class="Slideshow_Images" src="images/c-sharp.png" alt="C# logo">
-                    <div class="text">C#, .NET Framework, ASP.NET, <br />MVC... </div>
+                    <div class="text" id="slideshow-text">C#, .NET Framework, ASP.NET, MVC... </div>
                 </div>
                 <!--Slide 4/6-->
                 <div class="mySlides fade" style="display:none;">
                     <img class="Slideshow_Images" src="images/SQL.png" alt="SQL logo">
-                    <div class="text">back end development, databases and SQL.</div>
+                    <div class="text" id="slideshow-text">back end development, databases and SQL.</div>
                 </div>
                 <!--Slide 5/6-->
                 <div class="mySlides fade" style="display:none;">
                     <img class="Slideshow_Images" src="images/Unity-Logo.png" alt="Unity">
-                    <div class="text">I also have experience in 2D/3D <br />development in the Unity Engine.</div>
+                    <div class="text" id="slideshow-text">I also have experience in 2D/3D development in the Unity Engine.</div>
                 </div>
                 <!--Slide 6/6-->
                 <div class="mySlides fade" style="display:none;">
                     <img class="Slideshow_Images" src="images/stock-contact.png" alt="Contact Image">
-                    <div class="text">Contact me now!</div>
+                    <div class="text" id="slideshow-text">Contact me now!</div>
                 </div>
                 <!-- Previous and next buttons -->
                 <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -156,11 +163,11 @@
         </div>
         <!--Right column-->
         <div class="Column_1">
-            <br />
+
             <h1>About</h1>
             <p style="text-align:center">
                 I am a full-stack software developer who loves to code and solve problems. Outside of coding, I enjoy playing guitar and spending time with my family.
-                <br>
+              
                 <!-- <hr style="width: 200px;height:2px;border-width:0;color:gray;background-color:gray"> -->
             </p>
             <p style="text-align:center">
@@ -195,7 +202,7 @@
                 You can view my coding projects on my GitHub profile here: <a href="https://github.com/tbon27" target="_blank">Tony's projects on GitHub</a>
                 <br>
 
-                <!--popovers-->
+            <!--popovers-->
             <p class="center"><a tabindex="0" class="btn btn-lg btn-warning popover-dismiss" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="HTML/CSS Projects" style="font-size:1.5vw" data-content="Vacation Resort website: A mock homepage with a stylish reservation form and information, Movie Theater website: A styled informational page with movie showtimes and info, and a Member Rewards sign up form, and more!">Peek at my HTML/CSS...</a></p>
 
             <p class="center"><a tabindex="1" class="btn btn-lg btn-danger popover-dismiss2" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="JavaScript Projects" style="font-size:1.5vw" data-content="Pizza Menu: A dynamic webpage that calculates the price of a customer's order, Tic-Tac-Toe game: A customized version of the classic game, allowing for two player battles, and more!">Peek at my JavaScript...</a></p>
@@ -214,31 +221,7 @@
         </div>
     </div>
     <!-- END GITHUB SECTION -->
-    <!-- (OLD) CONTACT SECTION-->
-    <!--
-      <div class="Row" id="Contact">
 
-          <div class="Column_2 Column_tall">
-              <img class="special_image" src="images/contact_image.png" alt="Contact_Image">
-          </div>
-
-          <div class="Column_1 Column_tall">
-              <h1 class="contactHeader">Contact</h1>
-
-              <form name="contactForm" action="https://formspree.io/f/mpzbzaer" onsubmit="return ValidateForm()" method="POST">
-                  <label>Name:</label>
-                      <input type="text" name="Name:" placeholder="Enter your name here">
-                  <label>Email:</label>
-                      <input type="text" name="Email:" id="Email" name="Email" placeholder="Enter your email here">
-                    <label>Phone:</label>
-                      <input type="text" name="Phone:" id="Phone" name="Phone" placeholder="Enter your phone number here">
-                  <label>Message:</label>
-                      <input type="text" name="Message:" id="Message" name="Message" placeholder="Enter your message here">
-                    <input type="submit" value="SUBMIT">
-              </form>
-          </div>
-      </div> -->
-    <!-- END CONTACT SECTION-->
     <!-- UNITY SECTION -->
     <div class="Row" id="Unity">
         <!--Left Column-->
@@ -270,9 +253,11 @@
     </div>
 
     <!-- END UNITY SECTION -->
+
     <!-- POP UP CONTACT -->
 
-    <button class="open-button btn" onclick="openForm()">CONTACT</button>
+    <button class="open-button btn" id="contact-btn" onclick="openForm()">CONTACT</button>
+
     <div class="form-popup" id="myForm" ondblclick="closeForm()">
         <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="ValidatePopUpForm()" method="POST">
             <label>Name:</label>
@@ -283,51 +268,31 @@
             <input type="text" name="Phone:" id="Phone" placeholder="Enter your phone number here">
             <label>Message:</label>
             <input type="text" name="Message:" id="Message" placeholder="Enter your message here">
-            <input class="btn" type="submit" value="SUBMIT">
-            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            <div id="form-buttons">
+                <input class="btn" type="submit" value="SUBMIT">
+                <button class="btn cancel" type="button" onclick="closeForm()">CLOSE</button>
+            </div>           
         </form>
     </div>
     <!-- END POP UP CONTACT -->
+
     <!-- Back To Top -->
-    <a href="#top" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:.8vw; opacity: .8; font-weight: 500;"> &#129093; Back to Top</a>
+    <a href="#title-pointer" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:14px; opacity: .8; font-weight: 500;"> &#129093; Back to Top</a>
     <!--End Back to top -->
+
     <!--FOOTER SECTION-->
     <footer>
         <p class="center _footer">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
     </footer>
     <!-- END FOOTER SECTION-->
-    <!----------------
-          MY JS
-    ------------------->
+
+
+    <!---JS -->
+
     <script>
-        ////----- OLD form
-        // function ValidateForm(){
-        //   let x = document.forms["contactForm"]["Name:"].value
-        //   let y = document.forms["contactForm"]["Email:"].value
-        //   let z = document.forms["contactForm"]["Phone:"].value
-        //   let a = document.forms["contactForm"]["Message:"].value
-        //   if(x==""){
-        //     alert("Name must be filled out");
-        //     return false;
-        //   }
-        //   if(y==""){
-        //     alert("Email must be filled out");
-        //     return false;
-        //   }
-        //   if(z==""){
-        //     alert("Phone must be filled out");
-        //     return false;
-        //   }
-        //   if(a==""){
-        //     alert("Message must be filled out");
-        //     return false;
-        //   }
-        // }
 
-        //separate function for popup form validation
-
-
-        function ValidatePopUpForm() { //---NEW POPUP FORM
+    //---NEW POPUP FORM
+        function ValidatePopUpForm() { 
             let l = document.forms["PopUpForm"]["Name:"].value
             let m = document.forms["PopUpForm"]["Email:"].value
             let n = document.forms["PopUpForm"]["Phone:"].value
@@ -358,16 +323,6 @@
         };
         externalLinks();
 
-
-//The following has been moved to main.js
-        /*
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }*/
     </script>
     <!----------------
         END MY JS
