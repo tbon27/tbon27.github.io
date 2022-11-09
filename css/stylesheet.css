@@ -630,33 +630,6 @@ input[type="text"]:hover {
   box-shadow: 0 0 5px #69B4B4 inset;
 }
 
-/* Submit button */
-/*input[type="submit"] {
-  background-color: black;
-  color: white;
-  font-weight: bold;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Perpetua, Rockwell Extra Bold;
-}
-
- .cancel {
-    font-family: "Trebuchet MS", Optima;
-    letter-spacing: 0.3vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-    padding: 1.5vw;
-    cursor: pointer;
-    width: 100%;
-    height: auto;
-}*/
-
-
 /* Hover effect for submit button */
 input[type="submit"]:hover {
     background-color: #69B4B4;
