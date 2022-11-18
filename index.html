@@ -198,15 +198,33 @@
         <div class="Column_1">
             <h1 class="headings">GitHub</h1>
             <p style="text-align: center;">
-                You can view my coding projects on my GitHub profile here: <a href="https://github.com/tbon27" target="_blank">Tony's projects on GitHub</a>
+                Peek at some examples of my work by clicking on the buttons below. You can view my coding projects on my GitHub profile here: <a href="https://github.com/tbon27" target="_blank">Tony's projects on GitHub</a>
                 <br>
 
-            <!--popovers-->
-            <p class="center"><a tabindex="0" class="btn btn-lg btn-warning popover-dismiss" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="HTML/CSS Projects" style="font-size:2vh" data-content="Vacation Resort website: A mock homepage with a stylish reservation form and information, Movie Theater website: A styled informational page with movie showtimes and info, and a Member Rewards sign up form, and more!">Peek at my<br>HTML/CSS...</a></p>
+            <!--popovers
+            <p class="center"><a tabindex="0" class="btn btn-lg btn-warning popover-dismiss" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="HTML/CSS Projects" style="font-size:2vh; min-width: 180px;" data-content="Vacation Resort website: A mock homepage with a stylish reservation form and information, Movie Theater website: A styled informational page with movie showtimes and info, and a Member Rewards sign up form, and more!">Peek at my<br>HTML/CSS...</a></p>
 
-            <p class="center"><a tabindex="1" class="btn btn-lg btn-danger popover-dismiss2" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="JavaScript Projects" style="font-size:2vh" data-content="Pizza Menu: A dynamic webpage that calculates the price of a customer's order, Tic-Tac-Toe game: A customized version of the classic game, allowing for two player battles, and more!">Peek at my<br>JavaScript...</a></p>
+            <p class="center"><a tabindex="1" class="btn btn-lg btn-danger popover-dismiss2" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="JavaScript Projects" style="font-size:2vh; min-width: 180px;" data-content="Pizza Menu: A dynamic webpage that calculates the price of a customer's order, Tic-Tac-Toe game: A customized version of the classic game, allowing for two player battles, and more!">Peek at my<br>JavaScript...</a></p>
 
-            <p class="center"><a tabindex="2" class="btn btn-lg btn-success popover-dismiss3" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="C# Projects" style="font-size:2vh" data-content="Casino Game - Twenty One: A console app version of the classic card game allowing a user to bet whatever amount they desire, Car Insurance Quote App: An MVC web app that takes in customer information and calculates a quote based on the user info, and more!">Peek at my<br>C#...</a></p>
+            <p class="center"><a tabindex="2" class="btn btn-lg btn-success popover-dismiss3" role="button" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="focus" data-html="true" title="C# Projects" style="font-size:2vh; min-width: 180px;" data-content="Casino Game - Twenty One: A console app version of the classic card game allowing a user to bet whatever amount they desire, Car Insurance Quote App: An MVC web app that takes in customer information and calculates a quote based on the user info, and more!">Peek at my<br>C#...</a></p>            
+            
+            <p class="center" id="popoverX">
+                <a tabindex="3" class="btn btn-lg btn-success popover-dismissX popoverjs A" role="button" style="font-size:2vh; min-width: 180px;" data-addclass="A">Peek at my<br>C#...</a>
+            </p>        -->    
+           
+            <div class="center">
+                <button type="button" onclick="showPop1()" class="btn btn-warning pop-buttons" style="max-width: 180px; min-height: 70px;"><p class="center" style="font-size:2vh; width: auto; margin: 0; padding: 4px; white-space: normal; ">Click for HTML/CSS</p></button>
+                <img src="images/TemplateWebsite1vid.gif" alt="Sample Website" id="html-sample">
+            </div>            
+            <div class="center">
+                <button type="button" onclick="showPop2()" class="btn btn-danger pop-buttons2" style="max-width: 180px; min-height: 70px;"><p class="center" style="font-size:2vh; width: auto; margin: 0; padding: 4px; white-space: normal; ">Click for JavaScript</p></button>
+                <img src="images/JSwebsiteTemplate.gif" alt="Sample Website" id="html-sample2">
+            </div>            
+            <div class="center">
+                <button type="button" onclick="showPop3()" class="btn btn-success pop-buttons3" style="max-width: 180px; min-height: 70px;"><p class="center" style="font-size:2vh; width: auto; margin: 0; padding: 4px; white-space: normal; ">Click for C#</p></button>
+                <img src="images/CsharpMVCTemplate.gif" alt="Sample Website" id="html-sample3">
+            </div>
+
 
             <p style="text-align: center;">I would love to work with you on your project!<br />
                 Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me!</p>

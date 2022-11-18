@@ -135,7 +135,7 @@ q {
 .badges {
   text-align: center;
   padding: 10px;
-  font-size: 16px;
+  font-size: 2.5vh;
 }
 
 p {
@@ -421,7 +421,6 @@ END NAVBAR STYLES
   display: none; /* This prevents the images from being displayed, use JS to display these */
 }
 
-/* Slideshow section container */
 #Slideshow_Container {
   width: 28.5vw; /* relative sizing of the container for the slideshow set to 32.5% of the viewport width */
   height: auto;
@@ -449,12 +448,12 @@ END NAVBAR STYLES
 .Next {
   cursor: pointer;
   position: absolute; /* This makes the next and previous buttons position relative to the slideshow container */
-  top: 50%; /* This moves the buttons up in the slideshow container */
+  top: 30%; /* This moves the buttons up in the slideshow container */
   width: auto;
   padding: 2vw;
-  color: rgba(0,20,20,.85);
+  color: rgba(63, 63, 63, 0.85);
   font-weight: bold;
-  font-size: 17px;
+  font-size: 55px;
   border-radius: 0 3px 3px 0;
   user-select: none; /* this property -> user cannot highlight the text */
   transition: 0.6s ease;
@@ -792,5 +791,67 @@ label{
     font-size: 15px;
 }
 
-
-
+/* Pop Ups */
+.pop-buttons{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size:2vh; 
+  min-width: 180px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+.pop-buttons2{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size:2vh; 
+  min-width: 180px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+.pop-buttons3{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size:2vh; 
+  min-width: 180px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+#html-sample{
+ visibility: hidden;
+ width: 900px; 
+ border-radius: 8%; 
+ position:absolute; 
+ z-index: 10; 
+ float: right; 
+ margin-top: -220px; 
+ border:rgba(240, 173, 78, 0.4) 5px solid;
+}
+#html-sample2{
+ visibility: hidden;
+ width: 900px; 
+ border-radius: 8%; 
+ position:absolute; 
+ z-index: 10; 
+ float: right; 
+ margin-top: -220px; 
+ border:rgba(217, 83, 79, 0.4) 5px solid;
+}
+#html-sample3{
+ visibility: hidden;
+ width: 900px; 
+ border-radius: 8%; 
+ position:absolute; 
+ z-index: 10; 
+ float: right; 
+ margin-top: -220px; 
+ border:rgba(92, 184, 92, 0.4) 5px solid;
+}

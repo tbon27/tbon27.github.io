@@ -66,15 +66,105 @@ document.addEventListener(
   false
 );
 
+// var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+//   placement : 'right',
+//   trigger : 'focus',
+// });
+// var popover2 = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
+//   placement : 'right',
+  
+//   trigger: 'focus'
+// });
+// var popover3 = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
+//   placement : 'right',
+  
+//   trigger: 'focus'
+// });
+
+// var popoverX = new bootstrap.Popover(document.querySelector('.popover-dismissX'), {
+//   placement : 'right',
+//   trigger : 'focus',
+//   html : true,
+//   content : '<div style="width: 100%; overflow: visible;"><div id="pop-container"><img src="images/TemplateWebsite1vid.gif" alt="Sample Website" style="width: 600px; border-radius: 5%;"></div></div>'
+// });
+const x = document.getElementById("html-sample");
+function showPop1(){
+  if (window.getComputedStyle(x).visibility === "hidden") {
+    x.style.visibility = "visible";
+  } 
+  else if(window.getComputedStyle(x).visibility === "visible"){
+    x.style.visibility = "hidden";
+  }  
+}
+function closePop1(){
+  var y = document.getElementById("html-sample");
+    y.style.visibility = "hidden";
+}
+
+const testPop1 = document.querySelector('#html-sample');
+  document.addEventListener(
+    "click",
+    function (event) {
+      if (window.getComputedStyle(testPop1).visibility === "visible")
+      {
+        closePop1();
+      }
+    },
+    true
+  );
+  
+  //2
+const sample2 = document.getElementById("html-sample2");
+function showPop2(){
+  if (window.getComputedStyle(sample2).visibility === "hidden") {
+    sample2.style.visibility = "visible";
+  } 
+  else if(window.getComputedStyle(sample2).visibility === "visible"){
+    sample2.style.visibility = "hidden";
+  }  
+}
+function closePop2(){
+  var y = document.getElementById("html-sample2");
+    y.style.visibility = "hidden";
+}
+
+const testPop2 = document.querySelector('#html-sample2');
+  document.addEventListener(
+    "click",
+    function (event) {
+      if (window.getComputedStyle(testPop2).visibility === "visible")
+      {
+        closePop2();
+      }
+    },
+    true
+  );  
+  //3
+const sample3 = document.getElementById("html-sample3");
+function showPop3(){
+  if (window.getComputedStyle(sample3).visibility === "hidden") {
+    sample3.style.visibility = "visible";
+  } 
+  else if(window.getComputedStyle(sample3).visibility === "visible"){
+    sample3.style.visibility = "hidden";
+  }  
+}
+function closePop3(){
+  var y = document.getElementById("html-sample3");
+    y.style.visibility = "hidden";
+}
+
+const testPop3 = document.querySelector('#html-sample3');
+  document.addEventListener(
+    "click",
+    function (event) {
+      if (window.getComputedStyle(testPop3).visibility === "visible")
+      {
+        closePop3();
+      }
+    },
+    true
+  );
 
 
-var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-    trigger: 'focus'
-});
-var popover2 = new bootstrap.Popover(document.querySelector('.popover-dismiss2'), {
-    trigger: 'focus'
-});
-var popover3 = new bootstrap.Popover(document.querySelector('.popover-dismiss3'), {
-    trigger: 'focus'
-});
 
