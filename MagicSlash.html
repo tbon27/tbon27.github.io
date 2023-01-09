@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tony Bongiovanni</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo-small.png"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!------------------------------------------------------
+    This inline script is necessary (as opposed to a
+    script loaded from a separate file) to prevent flickering
+    -------------------------------------------------------->
+    <script>
+        //add the fade-out class to the body as soon as the page loads
+        document.body.classList.add('fade-out');
+        console.log("fadeout added");
+        // remove the fade-out class from the body once the page is loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+        console.log("fadeout removed");
+    </script>
+
+ <!-- NAV BAR -->
+ <div class="Navbar" id="navbar">
+    <a class="nav-link" href="./index.html">Home</a>
+
+    <!--<a href="#Slideshow">Slideshow</a>-->
+   <a class="nav-link" href="./unity.html">Unity Projects</a>       
+   <a class="nav-link" href="https://docs.google.com/document/d/1CG8Qx5-ADk71Caayq0fN6fKxP22yWYirAWzcBJIwQ0Q/edit?usp=sharing"  target="_blank">Resume</a>       
+   <a class="nav-link" href="https://www.linkedin.com/in/tony-bongiovanni/" target="_blank">LinkedIn</a>
+   <a class="active nav-link" href="./MagicSlashTOS.html">Magic Slash Hub</a>       
+
+</div>
+
+    <!--DropDown and linked in button--><!--
+    <div id="jumpto-dropdown">
+        <button class="btn btn-secondary dropdown-toggle dropdown1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jump to
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index:11;">
+            <a class="dropdown-item" href="#BongysCreations">Bongy's Creations</a>
+            <a class="dropdown-item" href="#AsteroidPool">Past Projects</a>
+            <a class="dropdown-item" href="#MagicSlash">Current Projects</a>
+            <a class="dropdown-item" href="#Technologies">Technologies</a>
+        </div>
+    </div> -->
+    <!-- END NAV BAR -->
+
+    <!-- BG VIDEO-->
+    <div id="Home">
+        <video autoplay muted loop id="Heading-Video">
+            <source src="images/video/spaceVideo2.mp4" type="video/mp4" width="1100" />
+            <!--Display message if video fails-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!-- END BG VIDEO-->
+    
+    <!-- VIDEO OVERLAY TEXT -->
+    <div class="Video_Text">
+        <div id="title-pointer">
+            <h1 class="white-text" id="title1">Magic Slash Hub</h1>
+        </div>
+        <div class="center"  style="padding-top: 20px;">
+            <span class="bio">
+                <p class="center" style="font-size: 22px">
+                    Welcome to the Magic Slash Hub! This is where you can find information about the project. Stay tuned for updates...
+                </p>
+                <p class="center">
+                    Magic Slash is a free 2D mobile game for Android devices released early November 2022.
+                </p>      
+                <p class="center">
+                    Click the Google Play Store badge below to play Magic Slash FREE today!
+                </p>  
+                <div style="width: 16vw; min-width: 200px; margin: 0 auto;">
+                    <a href="https://play.google.com/store/apps/details?id=com.BongysCreations.MagicSlash&pli=1" target="_blank">
+                        <img id="google-badge-ms" style="height: auto; width: 16vw; min-width: 200px; display: block; margin: 0 auto;" src="images/google-play-badge.png" alt="Google Play Badge Logo">
+                    </a>
+                </div>    
+            </span>
+            <!-- <p style="text-align: center; font-size: 18px;">Feel free to <a href="#Contact" class="contact" onclick="openForm()" ondblclick="closeForm()">Contact</a> me for collaborations on your projects!</p> -->
+        </div>
+    </div>
+
+    <div>
+        <div id="accordion">
+            <div class="card" style="background-color:rgba(0, 207, 197, 0.248); border-radius: 5% 5% 0 0;">
+              <div class="card-header" style="background-color:rgba(0, 95, 90, 0.362); border-radius: 5% 5% 0 0;" id="headingOne">
+                <h5 class="mb-0 center">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 28px; color:rgb(142, 255, 249)">
+                    Thank you for playing!
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body" style="color:rgb(255, 255, 255);">
+                  With my whole heart, thank you to all my friends, family, and those who continue to support me along my Game Development journey. A HUGE thank you to those who downloaded and played Magic Slash - I sincerely hope you enjoyed yourself. Infinite thanks.
+                </div>
+              </div>
+            </div>
+            <div class="card" style="background-color:rgba(0, 207, 197, 0.248);">
+              <div class="card-header" style="background-color:rgba(0, 95, 90, 0.362);" id="headingTwo">
+                <h5 class="mb-0 center">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 28px; color:rgb(142, 255, 249)">
+                    Bug Report (updated 01.08.2023)
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body" style="color:rgb(255, 255, 255); ">
+                    <span>
+                        Magic Slash Version 0.1 <br>
+                        Bug Notice <br>
+                        <br>
+                        <h5>Player Velocity Error</h5>
+                        <ul>
+                            <li>Problem: Player's velocity ~doubles, creating unintentionally fast speeds</li>
+                            <li>Occurrence: Unknown cause - Has occurred upon in-game respawn after death; has randomly occurred upon player hit</li>
+                            <li>Gamebreaking? Potentially (Unconfirmed); Unknown</li>
+                            <li>Recommendation: Quit and restart the application (save file information will persist)</li>
+                        </ul>      
+
+                        <h5>Slashable Item Spawners</h5>
+                        <ul>
+                            <li>Problem: Player's velocity ~doubles, creating unintentionally fast speeds</li>
+                            <li>Occurrence: Unknown cause - Has occurred upon in-game respawn after death; has randomly occurred upon player hit</li>
+                            <li>Gamebreaking? Potentially (Unconfirmed); Unknown</li>
+                            <li>Recommendation: Quit and restart the application (save file information will persist)</li>
+                        </ul>
+
+                        Please do not hesitate to reach out with questions or concerns, including new bug submissions. I will continuously work to make Magic Slash the best experience possible. Thank you for your patience and understanding, and stay tuned for updates. Thanks for playing!</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="card" style="background-color:rgba(0, 207, 197, 0.248); border-radius: 0 0 5% 5%;">
+              <div class="card-header" style="background-color:rgba(0, 95, 90, 0.362); border-radius: 0 0 5% 5%;" id="headingThree">
+                <h5 class="mb-0 center">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 28px; color:rgb(142, 255, 249)">
+                    Frequently Asked Questions
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body" style="color:rgb(255, 255, 255);">
+                    <h5>FAQ</h5>
+                    <ul>
+                        <li>Where can I play Magic Slash?
+                            <ul>
+                                <li>Magic Slash is available to download on the Google Play Store for FREE today!</li>
+                            </ul>
+                        </li>
+                        <li>Can I play on iOS?
+                            <ul>
+                                <li>Short Answer: Unfortunately, there is currently no iOS build for Magic Slash.</li>
+                            </ul>
+                        </li>
+                        <li>Does your app collect any of my data or information?
+                            <ul>
+                                 <li>No!</li></ul></li>
+                        <li>Where can I find more information about the application?
+                            <ul>
+                                <li>More information about the Magic Slash Privacy Notice and how this application behaves on your device can be found on the Terms of Service page - You can find this page by clicking the <em>Magic Slash Terms of Service</em> button at the bottom of this page.</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    
+
+    <div style="padding-top:20px; padding-bottom:20px; margin: 0 auto; background-color: rgba(54, 54, 54, 0.23); width: 100%; height: auto; border-radius: 35% 35% 0 0;">
+        <a href="MagicSlashTOS.html" style="display: block; margin: 0 auto; width: fit-content; background-color: rgba(0, 129, 129, 1); border-color: white;" class="btn btn-primary btn-lg active ms-tos-button" role="button" aria-pressed="true">Magic Slash Terms of Service</a>
+    </div>
+
+
+
+    <!-- POP UP CONTACT -->
+
+    <button class="open-button btn" id="contact-btn" onclick="openForm()">CONTACT</button>
+
+    <div class="form-popup" id="myForm" ondblclick="closeForm()">
+        <form name="PopUpForm" class="form-container" action="https://formspree.io/f/mpzbzaer" onsubmit="ValidatePopUpForm()" method="POST">
+            <label>Name:</label>
+            <input type="text" name="Name:" placeholder="Enter your name here">
+            <label>Email:</label>
+            <input type="text" name="Email:" id="Email" placeholder="Enter your email here">
+            <label>Phone:</label>
+            <input type="text" name="Phone:" id="Phone" placeholder="Enter your phone number here">
+            <label>Message:</label>
+            <input type="text" name="Message:" id="Message" placeholder="Enter your message here">
+            <div id="form-buttons">
+                <input class="btn" type="submit" value="SUBMIT">
+                <button class="btn cancel" type="button" onclick="closeForm()">CLOSE</button>
+            </div>           
+        </form>
+    </div>
+    <!-- END POP UP CONTACT -->
+    <!-- Back To Top -->
+    <a href="#title-pointer" class="btn btn-light btn-lg active backToTop" role="button" aria-pressed="true" style="font-size:14px; opacity: .8; font-weight: 500;">Back to Top</a>
+    <!--End Back to top -->
+    <!--FOOTER SECTION-->
+    <footer>
+        <p class="center _footer">&copy Bongy's Creations, <a href="https://github.com/tbon27" target="_blank">Tony on GitHub</a></p>
+    </footer>
+    <!-- END FOOTER SECTION-->
+    <!----------------
+          MY JS
+    ------------------->
+    <script>
+
+
+        function ValidatePopUpForm() { //---NEW POPUP FORM
+            let l = document.forms["PopUpForm"]["Name:"].value
+            let m = document.forms["PopUpForm"]["Email:"].value
+            let n = document.forms["PopUpForm"]["Phone:"].value
+            let o = document.forms["PopUpForm"]["Message:"].value
+            if (l == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (m == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            if (n == "") {
+                alert("Phone must be filled out");
+                return false;
+            }
+            if (o == "") {
+                alert("Message must be filled out");
+                return false;
+            }
+        }
+
+    </script>
+    <!----------------
+        END MY JS
+    ------------------->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

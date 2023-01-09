@@ -855,3 +855,22 @@ label{
  margin-top: -220px; 
  border:rgba(92, 184, 92, 0.4) 5px solid;
 }
+
+#google-badge-ms:hover{
+  transform: scale(1.1);
+  transition: transform .6s;
+}
+
+.ms-tos-button:hover{
+  transform: scale(1.1);
+  animation: changeButtonColor 1s;
+}
+
+@keyframes changeButtonColor {
+  from {
+    background-color: rgba(49, 214, 214, 0.45);
+  }
+  to {
+    background-color: rgba(0, 181, 181, 0.45);
+  }
+}
